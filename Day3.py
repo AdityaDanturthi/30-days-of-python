@@ -32,3 +32,9 @@ base = input('Please input base of the triangle: ')
 heightoftriangle = input('Please input height of the triangle: ')
 print('Area of triangle: ', 0.5* float(base)*float(heightoftriangle))
 
+a,b,c = input('Please input 3 sides of the triangle to calculate it\'s perimeter: ')
+print('Perimeter: ',a+b+c)
+
+print(len('python') > len('dragon'))
+print('on' in 'python' and 'dragon')
+
