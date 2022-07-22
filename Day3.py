@@ -37,4 +37,9 @@ print('Perimeter: ',a+b+c)
 
 print(len('python') > len('dragon'))
 print('on' in 'python' and 'dragon')
+print('10' is 10)
+
+hours = input('Hours: ')
+rate = input('Rate: ')
+print('Weekly earnings: ', hours*rate)
 
