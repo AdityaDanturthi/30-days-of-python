@@ -30,5 +30,5 @@ height = 6.0
 complex = 1+3j
 base = input('Please input base of the triangle: ')
 heightoftriangle = input('Please input height of the triangle: ')
-print('Area of triangle: ', 0.5*base*heightoftriangle)
+print('Area of triangle: ', 0.5* float(base)*float(heightoftriangle))
 
