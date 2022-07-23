@@ -20,3 +20,14 @@ multiline_string = """I am a programmer and enjoy programming.
 It is rewarding to do what you are passionate about.
 That is why I am doing 30 days of python"""
 print(multiline_string)
+
+# String concatenation
+firstname = 'Aditya'
+lastname = 'Danturthi'
+space = ' '
+fullname = firstname+space+lastname
+print(fullname) # Aditya Danturthi
+print(len(firstname)) # 6
+print(len(lastname)) # 9
+print(len(firstname) > len(lastname)) # True
+print(len(fullname)) # 16
