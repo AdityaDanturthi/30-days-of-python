@@ -49,3 +49,10 @@ lastname = 'Danturthi'
 
 formattedstring ='I am %s %s !' %(firstname,lastname)
 print(formattedstring)
+
+# New formatting 
+a = 1
+b = 2
+print("{} + {} = {} ".format(a,b,a+b))
+
+print("I am {} {} !".format(firstname,lastname))
