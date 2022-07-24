@@ -56,3 +56,6 @@ b = 2
 print("{} + {} = {} ".format(a,b,a+b))
 
 print("I am {} {} !".format(firstname,lastname))
+
+# String interpolation or F-strings
+print(f'{a} + {b} = {a+b}')
