@@ -31,3 +31,12 @@ print(len(firstname)) # 6
 print(len(lastname)) # 9
 print(len(firstname) > len(lastname)) # True
 print(len(fullname)) # 16
+
+# Escape sequences in strings
+
+# \n: New line
+# \t: Tab (8 spaces)
+# \\: Back slash
+# \': Single quote (')
+# \": Double quote (")
+
