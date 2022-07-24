@@ -40,3 +40,12 @@ print(len(fullname)) # 16
 # \': Single quote (')
 # \": Double quote (")
 
+print(" I am enjoying \t\n The \'python challenge\'")
+
+# String formatting
+
+firstname = 'Aditya'
+lastname = 'Danturthi'
+
+formattedstring ='I am %s %s !' %(firstname,lastname)
+print(formattedstring)
