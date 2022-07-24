@@ -79,3 +79,11 @@ print(firstletter) # P
 lastletter = language[-1]
 print(lastletter)
 
+# Slicing strings in python
+
+firstThreeLetters = language[0:3]
+print(firstThreeLetters)
+lastThreeLetters = language[-3:]
+lastThreeLetters = language[3:]
+lastThreeLetters = language[3:6]
+
