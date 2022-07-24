@@ -84,6 +84,15 @@ print(lastletter)
 firstThreeLetters = language[0:3]
 print(firstThreeLetters)
 lastThreeLetters = language[-3:]
+print(lastThreeLetters)
 lastThreeLetters = language[3:]
+print(lastThreeLetters)
 lastThreeLetters = language[3:6]
+print(lastThreeLetters)
 
+# Reversing a string
+
+print(greeting[::-1]) # !dlroW, olleH
+
+# SKipping characters while slicing
+print(language[0:6:2])
