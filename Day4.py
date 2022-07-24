@@ -59,3 +59,23 @@ print("I am {} {} !".format(firstname,lastname))
 
 # String interpolation or F-strings
 print(f'{a} + {b} = {a+b}')
+
+# Python strings as a sequence of characters
+
+language ='Python'
+a,b,c,d,e,f = language
+print(a) # P
+print(b) # y
+print(c) # t
+print(d) # h
+print(e) # o
+print(f) # n
+
+
+# Accessing characters in strings by index
+
+firstletter =language[0]
+print(firstletter) # P
+lastletter = language[-1]
+print(lastletter)
+
