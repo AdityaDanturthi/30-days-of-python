@@ -96,3 +96,8 @@ print(greeting[::-1]) # !dlroW, olleH
 
 # SKipping characters while slicing
 print(language[0:6:2])
+
+# String methods:
+
+challenge = "thirty days of python"
+print(challenge.capitalize())
