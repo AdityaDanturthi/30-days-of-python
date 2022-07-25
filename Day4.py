@@ -99,5 +99,15 @@ print(language[0:6:2])
 
 # String methods:
 
+#capitalize
 challenge = "thirty days of python"
 print(challenge.capitalize())
+
+#count
+print(challenge.count('y')) # 3
+print(challenge.count('y',7,14)) # 1
+print(challenge.count('th')) # 2
+
+#endswith()
+print(challenge.endswith('on')) # True
+print(challenge.endswith('tion')) # False
