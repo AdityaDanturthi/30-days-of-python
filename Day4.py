@@ -134,5 +134,17 @@ pi = 3.14
 area = pi*radius**2
 result = 'The radius of the circle is {} and the area is {}'.format(str(radius),str(area))
 
+# index(): returns the lowest index of a substring
+substring = 'da'
+print(challenge.index(substring))
 
+# rindex(): returns the highest index of a substring
+substring = 'da'
+print(challenge.rindex(substring))
 
+# isalnum(): checks if there's a alphanumeric character
+challenge = "30DaysofPython"
+print(challenge.isalnum()) # True
+
+challenge = "30 Days of Python"
+print(challenge.isalnum()) # False
