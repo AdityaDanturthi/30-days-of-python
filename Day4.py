@@ -119,3 +119,8 @@ print(challenge.expandtabs(10)) # replace space with 10 spaces4
 # find() returns first occurrence of a substring or else it will return -1
 print(challenge.find('y')) # 5
 print(challenge.find('th')) # 0
+
+# rfind() returns last occurrence of a substring or else it will return -1
+print(challenge.rfind('y')) # 16
+print(challenge.rfind('th')) # 17
+
