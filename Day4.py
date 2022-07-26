@@ -111,3 +111,11 @@ print(challenge.count('th')) # 2
 #endswith()
 print(challenge.endswith('on')) # True
 print(challenge.endswith('tion')) # False
+
+# expandtabs(): replaces spaces with tabs
+print(challenge.expandtabs()) # replace space with 8 spaces by default
+print(challenge.expandtabs(10)) # replace space with 10 spaces4
+
+# find() returns first occurrence of a substring or else it will return -1
+print(challenge.find('y')) # 5
+print(challenge.find('th')) # 0
