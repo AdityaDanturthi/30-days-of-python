@@ -124,3 +124,15 @@ print(challenge.find('th')) # 0
 print(challenge.rfind('y')) # 16
 print(challenge.rfind('th')) # 17
 
+country ='Canada'
+age = 250
+# format(): formatting the output string
+sentence = 'I am {} {}. I live in {}. I am {} old.'.format(firstname,lastname,country,age)
+
+radius = 10
+pi = 3.14 
+area = pi*radius**2
+result = 'The radius of the circle is {} and the area is {}'.format(str(radius),str(area))
+
+
+
