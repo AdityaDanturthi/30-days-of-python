@@ -14,4 +14,10 @@ lst = list() # This is an empty list
 # Using square brackets
 lst = [] # This is an empty list
 
+fruits = ['apple','mango','banana','orange']
+print('Fruits: ', fruits)
+
+print('Number of fruits: ',len(fruits))
  
+ # list can have different types of data
+listprop = ['Aditya',260,True,{'Hi': 'How are you?'}]
