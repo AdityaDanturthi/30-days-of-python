@@ -24,3 +24,10 @@ listprop = ['Aditya',260,True,{'Hi': 'How are you?'}]
 
 # Accessing lists using indexing
 print(fruits[0])
+
+# Unpacking list items
+item1, item2, itmem3, item4 = fruits
+
+# Slicing items in a list
+print(fruits[0:4]) # returns all fruits
+print(fruits[0:]) # returns all fruits
