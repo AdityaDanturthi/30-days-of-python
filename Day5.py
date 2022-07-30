@@ -21,3 +21,6 @@ print('Number of fruits: ',len(fruits))
  
  # list can have different types of data
 listprop = ['Aditya',260,True,{'Hi': 'How are you?'}]
+
+# Accessing lists using indexing
+print(fruits[0])
