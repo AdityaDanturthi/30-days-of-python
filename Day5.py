@@ -61,5 +61,18 @@ lst.clear() # removes all items
 # Copying a list
 fruits_copy = fruits.copy()
 
+# Joining lists
+list1 = [1]
+list2 = [2]
+numbers = list1 + list2 # [1,2]
+
+# Joining lists using extend()
+list1.extend(list2) # [1,2]\
+
+# Counting items in a list
+list1.count(1) # 1
+
+
+
 
 
