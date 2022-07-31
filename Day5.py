@@ -82,5 +82,6 @@ numbers.reverse() # [2,1]
 numbers.sort() # ascending
 numbers.sort(reverse=True) # descending
 
-
+# sorted() returns the ordered list without modifying the original list
+print(numbers.sorted())
 
