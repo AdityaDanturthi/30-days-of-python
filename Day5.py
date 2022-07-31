@@ -72,7 +72,15 @@ list1.extend(list2) # [1,2]\
 # Counting items in a list
 list1.count(1) # 1
 
+# Finding index of an item in a list
+fruits.index('orange')
 
+# Reversing a list
+numbers.reverse() # [2,1]
+
+# Sorting items in a list
+numbers.sort() # ascending
+numbers.sort(reverse=True) # descending
 
 
 
