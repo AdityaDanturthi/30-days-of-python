@@ -35,3 +35,25 @@ fruits.add('mango')
 
 # Removing an item from a set using pop(). pop() removes a random item in the list
 removeditem = fruits.pop()
+
+# Clearing items in a set
+fruits.clear()
+
+fruits = {'banana','apple','orange', 'pineapple'}
+
+# Deleting a set
+del fruits
+
+fruits = {'banana','apple','orange', 'pineapple'}
+
+# Converting a list into a set
+vegetables = ['tomato', 'potato', 'cabbage','onion', 'carrot']
+vegetables = set(vegetables)
+
+# Joining sets
+fruitsandvegetables = fruits.union(vegetables)
+
+# Finding intersection of items in a set
+fruits = fruits.intersection(fruitsandvegetables)
+
+# Checking superset and subset
