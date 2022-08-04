@@ -20,3 +20,18 @@ for fruit in fruits:
 
 # Checking an item in a set
 print('apple' in fruits) # True
+
+# Adding itmes in a set
+fruits.add('mango')
+
+# Adding multiple fruits to a set
+morefruits = ('watermelon', 'avocado')
+fruits.update(morefruits)
+
+# Removing items from a set
+fruits.remove('mango')
+
+fruits.add('mango')
+
+# Removing an item from a set using pop(). pop() removes a random item in the list
+removeditem = fruits.pop()
