@@ -57,3 +57,14 @@ fruitsandvegetables = fruits.union(vegetables)
 fruits = fruits.intersection(fruitsandvegetables)
 
 # Checking superset and subset
+print(fruits.issubset(fruitsandvegetables)) # True
+print(fruitsandvegetables.issuperset(fruits)) # True
+
+# Checking differences between two sets
+print(fruits.difference(fruitsandvegetables))
+
+# Finding symmetric differences bewteen sets
+print(fruitsandvegetables.symmetric_difference(fruits))
+
+# Disjoint sets: If two sets don't have anythong in common they are called disjoint sets
+fruits.isdisjoint(vegetables) # True
