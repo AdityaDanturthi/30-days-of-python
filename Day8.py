@@ -4,8 +4,18 @@
 emptyDict = {}
 
 dct = {'Name':'Aditya Danturthi',
-        'Age': 260
+        'Age': 260,
+        'skills':['JavaScript', 'Tableau', 'Power BI', 'SQL', 'Python'],
+        'address':{
+            'street':'this street',
+            'zipcode':'A1BC2D'
+        }
 }
 
 # Dictionary length
 print(len(dct)) # Prints number of key value pairs
+
+# Accessing items in a dictionary
+print(dct['Name']) # Aditya Danturthi
+print(dct['skills'][4]) # Python
+print(dct['address']['zipcode']) # A1BC2D
