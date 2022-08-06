@@ -26,3 +26,5 @@ dct['skills'].append('scikit-learn')
 # Modifying items in a dictionary
 dct['age'] = 262
 
+# Checking keys in a dictionary
+print('address' in dct) # True
