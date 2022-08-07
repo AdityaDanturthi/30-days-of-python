@@ -35,3 +35,13 @@ elif b == 0:
     print('b is 0')
 else:
     print('b is a negative number')
+
+# if conditon in combination with logical operators
+if b > 0 and b%2 == 0:
+    print('b is a positive and even number')
+elif b > 0 and b%2 != 0:
+    print('b is a positive and odd number')
+elif b == 0:
+    print('b is zero')
+else:
+    print('b is a negative number')
