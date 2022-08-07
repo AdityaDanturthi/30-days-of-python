@@ -45,3 +45,11 @@ elif b == 0:
     print('b is zero')
 else:
     print('b is a negative number')
+
+# if and or logical operator
+user = 'admin'
+accesslevel = 3
+if user == 'admin' or accesslevel == 3:
+    print('Access granted!')
+else:
+    print('Access denied!')
