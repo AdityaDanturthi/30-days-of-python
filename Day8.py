@@ -39,3 +39,23 @@ print(dct.clear()) # removes all items from dictionary
 
 # Deleting dictionary
 del dct
+
+dct = {'Name':'Aditya Danturthi',
+        'Age': 260,
+        'skills':['JavaScript', 'Tableau', 'Power BI', 'SQL', 'Python'],
+        'address':{
+            'street':'this street',
+            'zipcode':'A1BC2D'
+        }
+}
+
+# Copying a dcitionary
+dct_copy = dct.copy()
+
+# Getting dictionary keys as a list
+dctkeys = dct.keys()
+print(dctkeys)
+
+# Getting dictionary values as a list
+dctvalues = dct.values()
+print(dctvalues)
