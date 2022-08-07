@@ -28,3 +28,14 @@ dct['age'] = 262
 
 # Checking keys in a dictionary
 print('address' in dct) # True
+
+# Removing key-value pairs from a dictionary
+dct.pop('age') # removes age from dictionary
+dct.popitem() # removes address from dictionary
+del dct['Name'] # removes name from dictionary
+
+# Clearing dictionary
+print(dct.clear()) # removes all items from dictionary
+
+# Deleting dictionary
+del dct
