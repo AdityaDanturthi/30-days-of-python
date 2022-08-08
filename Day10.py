@@ -60,4 +60,9 @@ for key in dct:
     print(key) # prints keys in the dictionary
 
 for key,value in dct.items():
-    print(key,value)
+    print(key,value) # prints key and value
+
+# for loop with set
+ITcompanies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+for company in ITcompanies:
+    print(company)
