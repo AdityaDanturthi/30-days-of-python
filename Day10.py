@@ -38,3 +38,26 @@ for letter in language:
 
 for i in range(len(language)):
     print(language[i])
+
+# for loop with tuple
+numbers = (0,1,2,3,4,5)
+for number in numbers:
+    print(number)
+
+# for loop with dictionary looping through a dictionary gives you the key from the dictionary
+
+dct = {
+    'name':'Aditya',
+    'age':260,
+    'skills':['JavaScript', 'Python', 'Power BI', 'SQL', 'Tableau'],
+    'address':{
+        'street':'this street',
+        'zipcode':'A1B C2D'
+    }
+}
+
+for key in dct:
+    print(key) # prints keys in the dictionary
+
+for key,value in dct.items():
+    print(key,value)
