@@ -24,3 +24,17 @@ while count < 5:
         continue
     print(count)
     count += 1
+
+# For loop
+numbers = [0,1,2,3,4,5,6,7,8,9,10]
+for number in numbers:
+    print(number)
+
+# for loop with string
+
+language = 'Python'
+for letter in language:
+    print(letter)
+
+for i in range(len(language)):
+    print(language[i])
