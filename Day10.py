@@ -90,3 +90,25 @@ print(st)
 
 lst =list(range(0,11,2)) # step = 2
 print(lst)
+
+for number in range(11):
+    print(number) # doesn't include 11
+
+# Nested for loop
+
+for key in dct:
+    if key == 'skills':
+        for skill in dct['skills']:
+            print(skill)
+
+# For else
+
+for number in range(11):
+    print(number)
+else:
+    print('Loop ends at:',number)
+
+# Pass
+for number in range(11):
+    print(number)
+    pass
