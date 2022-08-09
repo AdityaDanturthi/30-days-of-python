@@ -66,3 +66,27 @@ for key,value in dct.items():
 ITcompanies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
 for company in ITcompanies:
     print(company)
+
+# break and continue using for loop
+
+for number in numbers:
+    print(number)
+    if number == 3:
+        break
+
+for number in numbers:
+    print(number)
+    if number == 3:
+        continue
+    print('Next number is ', number + 1) if number != 5 else print('loop\'s end')
+print('Outside loop')
+
+# Range function
+lst =list(range(11))
+print(lst)
+
+st = set(range(1,11))
+print(st)
+
+lst =list(range(0,11,2)) # step = 2
+print(lst)
