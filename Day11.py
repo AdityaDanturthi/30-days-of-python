@@ -70,3 +70,15 @@ def weightinnewtons(mass, gravity):
     weight = str(weight)+'N'
     return weight
 print('Weight in Newtons: ',weightinnewtons(80,9.81))
+
+# Passing arguments with key and value
+def printfullname2(firstname2,lastname2):
+    fullname2 = firstname2+' '+lastname2
+    return fullname2
+print(printfullname2(firstname2='Aditya',lastname2='Danturthi'))
+
+# Functions with default parameters
+def greetings(name2 = 'Aditya'): # Default value of the parameter
+    message2 = name2 + ', How\'s it going?'
+    return message2
+print(greetings('Adi')) # Parameter passed with fuction call overrides default paramenter
