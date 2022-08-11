@@ -82,3 +82,12 @@ def greetings(name2 = 'Aditya'): # Default value of the parameter
     message2 = name2 + ', How\'s it going?'
     return message2
 print(greetings('Adi')) # Parameter passed with fuction call overrides default paramenter
+
+# Arbitrary number of arguments: If we do not know the number of arguments we pass to our function, we can create a function which can take arbitrary number of arguments by adding * before the parameter name.
+
+def sumofmultiplenumbers(*nums):
+    total1 = 0
+    for num2 in nums:
+        total1 += num2
+    return total1
+print(sumofmultiplenumbers(1,2,3,4,5,6,7,8,9,10))
