@@ -1,6 +1,7 @@
 # Modules: A module is a file containing a set of codes or a set of functions which can be included in an application. A module could be a file containing a single variable, a function or a big code base.
 
 # Creating a module: fullnamefirstmodule.py
+from asyncio.windows_events import NULL
 from fullnamefirstmodule import *
 print(fullname('Aditya', 'Danturthi'))
 print(addtwonumbers(1,2,3,4,5,6,7,8,9,10))
@@ -68,7 +69,70 @@ print(string.digits)
 print(string.punctuation)
 
 # Random module
-from random import random, randint
+from random import *
 
 print(random())
 print(randint(0,10))
+
+# def userid():
+#     useridstring = ''
+#     for i in randrange(0,9):
+#         if len(useridstring) == 6:
+#             break
+#         j = str(i)
+#         useridstring += j
+#         # if j == '1':
+#         #     useridstring += 'ee'
+#         # continue 
+#     return useridstring
+# print(userid())
+
+
+# Day 12: Exercise 1
+# def userid():
+#     useridstring = ''
+#     while len(useridstring) < 6:
+#         randomnumber = randint(0,9)
+#         randomletter = choice(string.ascii_letters)
+#         randomnumber = str(randomnumber)
+#         randomstring  = randomnumber + randomletter
+#         useridstring += randomstring 
+#     return useridstring
+
+# print(userid())
+# Day 12: Exercise 2
+# def userid(numberofchars,numberofstringsreq):
+#     useridstring = ''
+#     useridstringlist = []
+#     i = 0
+#     while i < numberofstringsreq:
+#         while len(useridstring) < numberofchars:
+#             randomnumber = randint(0,9)
+#             randomletter = choice(string.ascii_letters)
+#             randomnumber = str(randomnumber)
+#             randomstring  = randomnumber + randomletter
+#             useridstring += randomstring 
+#         useridstringlist.append(useridstring)
+#         i += 1
+#     return useridstringlist
+
+# numberofchars = int(input('Number of characters required:'))
+# numberofstringsreq = int(input('Number of strings required:'))
+# print(userid(numberofchars,numberofstringsreq))
+
+# Day 12: Exercise 1
+def userid(numberofchars):
+    useridstring = ''
+    useridstringlist = []
+    while len(useridstring) < numberofchars:
+        randomnumber = randint(0,9)
+        randomletter = choice(string.ascii_letters)
+        randomnumber = str(randomnumber)
+        randomstring = choice(randomnumber+randomletter)
+        useridstring += randomstring 
+    useridstringlist.append(useridstring)
+    return useridstringlist
+
+numberofchars = int(input('Number of characters required:'))
+# numberofstringsreq = int(input('Number of strings required:'))
+print(userid(numberofchars))
