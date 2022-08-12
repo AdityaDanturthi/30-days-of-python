@@ -24,3 +24,12 @@ os.rmdir()
 import sys
 
 print('Computer: Hi {}!\n Computer: How are you?\n Aditya: {}! \n Computer: That\'s good!'.format(sys.argv[1], sys.argv[2]))
+
+sys.exit()
+sys.maxsize # largest integer that will be accepted
+
+sys.path # environment path
+sys.version # return version of python
+
+# Statistics module
+import statistics
