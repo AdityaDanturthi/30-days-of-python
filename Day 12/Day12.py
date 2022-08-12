@@ -19,3 +19,8 @@ os.getcwd()
 
 # Removing a directory
 os.rmdir()
+
+# Sys module
+import sys
+
+print('Computer: Hi {}!\n Computer: How are you?\n Aditya: {}! \n Computer: That\'s good!'.format(sys.argv[1], sys.argv[2]))
