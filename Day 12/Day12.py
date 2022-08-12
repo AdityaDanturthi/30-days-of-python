@@ -4,3 +4,18 @@
 import fullnamefirstmodule 
 print(fullnamefirstmodule.fullname('Aditya', 'Danturthi'))
 print(fullnamefirstmodule.addtwonumbers(1,2,3,4,5,6,7,8,9,10))
+
+# Importing in-built modules
+import os
+
+# Creating a directory
+os.mkdir('Directory name')
+
+# Changing the path of the current directory
+os.chdir('path')
+
+# Getting the current working directory
+os.getcwd()
+
+# Removing a directory
+os.rmdir()
