@@ -40,3 +40,16 @@ print(res(2))
 
 res = hof('absolute')
 print(res(-2))
+
+# Python closure: nested functions
+
+def add10():
+    ten = 10
+    def add(num):
+        return num + ten
+    return add
+
+nestedfunc = add10()
+print(nestedfunc(2))
+print(nestedfunc(5))
+
