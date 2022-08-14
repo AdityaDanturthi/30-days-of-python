@@ -3,6 +3,7 @@
 
 # Ways to convert a string to a list of characters
 from random import random
+from stringprep import c22_specials
 
 
 language = 'Python'
@@ -52,3 +53,28 @@ multiplelsts = [[1,2,3], [4,5,6], [7,8,9]]
 convertedsinglelst = [ num for row in multiplelsts for num in row]
 print(type(convertedsinglelst))
 print(convertedsinglelst)
+
+# Regular function
+def addnums(a,b):
+    return a + b
+print(addnums(1,2))
+# regular function converted into a lambda function
+
+total = lambda a1,b1 : a1 + b1
+print(total(2,3))
+
+# Self-invoking lambda function
+print((lambda a, b: a - b)(5,3))
+
+squares = lambda x: x*x
+print(squares(5))
+
+# Multiple variables
+multiplenums = lambda a2, b2, c2: a2+ b2+ c2
+print(multiplenums(2,3,4))
+
+# Lambda function inside another function
+def exponential(d):
+    return lambda n: d ** n
+
+print(exponential(2)(2))
