@@ -53,3 +53,31 @@ nestedfunc = add10()
 print(nestedfunc(2))
 print(nestedfunc(5))
 
+# Python Decorators
+
+# Normal function
+def greeting():
+    return 'Hi'
+
+def uppercasedec(function):
+    def wrapper():
+        func = function()
+        touppercase =func.upper()
+        return touppercase
+    return wrapper
+g = uppercasedec(greeting)
+print(g())
+
+# Converting normal function into a decorator
+
+def uppercasedeco(function):
+    def wrapper1():
+        func1 = function
+        touppercase1 = func1.upper()
+        return touppercase1
+    return wrapper1
+
+@uppercasedeco
+def greeting1():
+    return 'Hi, how are you?'
+print(greeting1())
