@@ -190,3 +190,10 @@ def addnums(x, y):
 
 total = reduce(addnums, numstr)
 print(total)
+
+numstr = ['1', '2', '3', '4', '5']
+def addstrs(x, y):
+    return x + y
+
+allstrs = reduce(addstrs, numstr)
+print(allstrs)
