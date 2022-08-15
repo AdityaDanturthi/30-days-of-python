@@ -105,3 +105,16 @@ def splitstringdecorator(function):
 def greeting2():
     return 'Hey!'
 print(greeting2)
+
+# Accepting parameters in deocrator functions
+def decoratorwithparameters(function):
+    def wrapperacceptingparameters(para1, para2, para3):
+        function(para1, para2, para3)
+        print('I live in {}.'.format(para3))
+    return wrapperacceptingparameters
+
+@decoratorwithparameters
+def details(firstname, lastname, country):
+    print('I am {} {}! I live in {}.'.format(firstname, lastname, country))
+
+details('Aditya', 'Danturthi', 'Canada')
