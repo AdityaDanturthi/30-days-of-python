@@ -62,7 +62,7 @@ def greeting():
 def uppercasedec(function):
     def wrapper():
         func = function()
-        touppercase =func.upper()
+        touppercase = func.upper()
         return touppercase
     return wrapper
 g = uppercasedec(greeting)
@@ -72,7 +72,7 @@ print(g())
 
 def uppercasedeco(function):
     def wrapper1():
-        func1 = function
+        func1 = function()
         touppercase1 = func1.upper()
         return touppercase1
     return wrapper1
@@ -118,3 +118,4 @@ def details(firstname, lastname, country):
     print('I am {} {}! I live in {}.'.format(firstname, lastname, country))
 
 details('Aditya', 'Danturthi', 'Canada')
+
