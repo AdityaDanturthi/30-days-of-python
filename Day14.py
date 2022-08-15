@@ -106,7 +106,7 @@ def greeting2():
     return 'Hey!'
 print(greeting2)
 
-# Accepting parameters in deocrator functions
+# Accepting parameters in decorator functions
 def decoratorwithparameters(function):
     def wrapperacceptingparameters(para1, para2, para3):
         function(para1, para2, para3)
@@ -118,4 +118,36 @@ def details(firstname, lastname, country):
     print('I am {} {}! I live in {}.'.format(firstname, lastname, country))
 
 details('Aditya', 'Danturthi', 'Canada')
+
+# Built-in higher order functions
+
+# Map function
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+def square(x):
+    return x ** 2
+squarednums = map(square, numbers)
+print(list(squarednums))
+
+# Example 1: Appying a lambda function
+squarednums1 = map(lambda x: x** 2, numbers)
+print(list(squarednums1))
+
+# Example 2: converting string list to int
+numstr = ['1', '2', '3', '4', '5']
+numint = map(int, numstr)
+print(list(numint))
+
+# Example 3: Upper case
+names = ['Aditya', 'Alex']
+def changetoupper(name):
+    return name.upper()
+
+uppercasednames = map(changetoupper, names)
+print(list(uppercasednames))
+
+# Example 3 with lambda function
+uppercasednames1 = map(lambda name: name.upper(), names)
+print(list(uppercasednames1))
+
 
