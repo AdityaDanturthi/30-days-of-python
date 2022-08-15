@@ -81,3 +81,27 @@ def uppercasedeco(function):
 def greeting1():
     return 'Hi, how are you?'
 print(greeting1())
+
+
+# Applying multiple decorators to a single function
+
+#First decorator
+def uppercasedecorator(function):
+    def wrapper2():
+        func = function
+        uppercasefunctionvar = func.upper()
+        return uppercasefunctionvar
+    return wrapper2
+
+def splitstringdecorator(function):
+    def wrapper2():
+        func = function
+        splitstringfuncvar = func.split()
+        return splitstringfuncvar
+    return wrapper2
+
+@uppercasedecorator
+@splitstringdecorator
+def greeting2():
+    return 'Hey!'
+print(greeting2)
