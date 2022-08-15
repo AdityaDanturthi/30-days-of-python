@@ -150,4 +150,35 @@ print(list(uppercasednames))
 uppercasednames1 = map(lambda name: name.upper(), names)
 print(list(uppercasednames1))
 
+# Filter function
+
+# Example 1
+allnums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+def even(num):
+    if num % 2 == 0:
+        return True
+    return False
+
+evennums = filter(even, allnums)
+print(list(evennums))
+
+# Example 2
+allnums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+def odd(num):
+    if num % 2 != 0:
+        return True
+    return False
+
+oddnums = filter(odd, allnums)
+print(list(oddnums))
+
+# Example 3: Filter strings longer than 7 characters
+strlist = ['aaaaaaaaaaaa', 'bbb', 'ccccccccccccc', 'ddddddd', 'eeeeeeeeee']
+def checkstr(check):
+    if len(check) > 7:
+        return True
+    return False
+longstrs = filter(checkstr, strlist)
+print(list(longstrs))
 
