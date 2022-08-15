@@ -182,3 +182,11 @@ def checkstr(check):
 longstrs = filter(checkstr, strlist)
 print(list(longstrs))
 
+# Reduce function
+from functools import *
+numstr = ['1', '2', '3', '4', '5']
+def addnums(x, y):
+    return int(x) + int(y)
+
+total = reduce(addnums, numstr)
+print(total)
