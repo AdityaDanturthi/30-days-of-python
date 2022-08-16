@@ -1,10 +1,10 @@
 # Type of errors
 
 # SyntaxError
-print 'Hello world' # SyntaxError: missing parantheses
+print 'Hello world' # SyntaxError: Missing parentheses in call to 'print'. Did you mean print('hello world')?
 
 # NameError
-print(a) # NameError: a is not defined
+print(a) # NameError: 'a' is not defined
 
 # IndexError
 nums = [1, 2, 3, 4, 5]
