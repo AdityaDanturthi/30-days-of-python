@@ -48,3 +48,11 @@ print(t1)
 
 t2 = now2.strftime("%d-%m-%Y, %H:%M %p")
 print(t2)
+
+# String to time using strptime
+datestr = '1 January, 2022'
+print('Date string: ',datestr)
+
+dateobj = datetime.strptime(datestr, '%d %B, %Y')
+
+print('Date object: ',dateobj)
