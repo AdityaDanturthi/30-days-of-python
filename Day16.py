@@ -83,3 +83,24 @@ print(c)
 
 d = time(10,50,5, 100000) # last parameter is microseconds
 print(d)
+
+# Difference between two points in time
+today = date(year = 2022, month = 8, day= 17)
+newyear = date(year = 2023, month = 1, day= 1)
+
+daystonewyear =  newyear-today
+
+tt = datetime(year = 2022, month = 8, day =17, hour = 0, minute = 0, second = 59)
+tt1 = datetime(year = 2022, month = 10, day =18, hour = 0, minute = 0, second = 59)
+
+ttdiff = tt1-tt
+print(ttdiff)
+
+print('Days to new year: ',daystonewyear)
+
+# Difference between two points in time using timedata
+from datetime import timedelta
+td = timedelta(weeks = 12, days = 10, hours= 4, seconds= 20)
+td1 = timedelta(days = 7, hours = 5, minutes= 3, seconds= 30)
+tddiff = td - td1
+print(tddiff)
