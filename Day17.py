@@ -83,3 +83,15 @@ def sumnums(*args):
 print(sumnums(1,2,3,4,5))
 print(sumnums(1,2,3,4,5,6,7,8,9,10))
 
+# Packing a dictionary
+
+def packingdetails(**kwargs):
+    for key in kwargs:
+        print(f'{key} = {kwargs[key]}')
+    return kwargs
+
+print(packingdetails(name = 'Aditya', country = 'Canada', age = 260))
+
+
+
+
