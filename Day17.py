@@ -7,7 +7,6 @@ except:
     print(' Something went wrong')
 
 # Kind of error
-
 try:
     name = input('Please input your name: ')
     birthyear = int(input('Please input your birth year: '))
@@ -23,5 +22,45 @@ except ValueError:
 except ZeroDivisionError:
     print('zero division error occured')
 
+# Shortening the above code
+try:
+    name = input('Please input your name: ')
+    birthyear = int(input('Please input your birth year: '))
+    dateobj = datetime.now()
+    thisyear = dateobj.year
+    thisyear = int(thisyear)
+    age = thisyear - birthyear
+    print(f'Hi {name}! You are {age} years old.')
+except Exception as e:
+    print(e)
 
+# Packing and unpacking arguments in python
+# We use two operators:
+
+# * for tuples
+# ** for dictionaries
+
+# Unpacking a list
+def sumofnums(a,b,c,d):
+    return a+b+c+d
+
+lst = [1,2,3,4]
+# print(sumofnums(lst)) #Error: This function takes numbers (not a list) as arguments. Let us unpack/destructure the list.
+print(sumofnums(*lst))
+
+# Unpacking can be used in built-in functions
+randomlst = range(0,10)
+print('List of numbers using range: ',list(randomlst))
+
+args = [0,9]
+randomlist1 = range(*args)
+print('List of numbers using unpacking in range: ',list(randomlist1))
+
+# A list or tuple can also be unpacked like this:
+countries = ['US', 'Canada', 'Switzerland']
+us, *rest= countries
+print(us, rest)
+
+one, *restnums= lst
+print(one, restnums)
 
