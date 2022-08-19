@@ -92,6 +92,24 @@ def packingdetails(**kwargs):
 
 print(packingdetails(name = 'Aditya', country = 'Canada', age = 260))
 
+# Spreading
+lst1 = [1,2,3,4]
+lst2 = [5,6,7,8]
+
+lst = [ 0,*lst1,*lst2,9,10]
+print(lst)
+
+northamericancountries = ['USA', 'Canada']
+asiancountries = ['Japan', 'India', 'China']
+countrieslst = [*northamericancountries,*asiancountries]
+print(countrieslst)
+
+# Enumerate
+for index, item in enumerate([10,20,30]):
+    print(index,item)
 
 
-
+for index, i in enumerate(countrieslst):
+    print('Hello')
+    if i == 'Japan':
+        print(f'The country {i} has been found at {index}')
