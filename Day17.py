@@ -113,3 +113,18 @@ for index, i in enumerate(countrieslst):
     print('Hello')
     if i == 'Japan':
         print(f'The country {i} has been found at {index}')
+
+# Zip: Combining lists when looping through them
+fruits = ['banana', 'apple', 'pineapple', 'orange']
+vegetables = ['potato', 'onion', 'carrot', 'broccoli']
+fruitsandvegetables = []
+for f,v in zip(fruits, vegetables):
+    fruitsandvegetables.append({'fruit':f, 'vegetable':v})
+
+print(fruitsandvegetables)
+
+#Exercise
+cnames = ['Finland', 'Sweden', 'Norway','Denmark','Iceland', 'Estonia','Russia']
+*nordic, es, ru = cnames 
+
+print(nordic,es,ru)
