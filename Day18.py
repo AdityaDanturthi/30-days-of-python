@@ -1,4 +1,5 @@
 # Regular Expressions: It is a special text string that helps find patterns in data
+import email
 from gettext import find
 import re
 
@@ -84,3 +85,53 @@ print(applematches)
 regexappleandbanana = r'[Aa]pple | [Bb]anana'
 appleandbananamatches = re.findall(regexappleandbanana, fruitsstr)
 print(appleandbananamatches)
+
+# Escape characters(\) in regex
+regexescape = r'\d' # d is a special character and stands for digits
+strwithnums = 'This regular expression example was made on August 20,  2022 and revised on August 20, 2022'
+nummatches = re.findall(regexescape, strwithnums)
+print(nummatches)
+
+# Find and searatre numbers by number of digits
+regexescape = r'\d+' # d is a special character and stands for digits
+strwithnums1 = 'This regular expression example was made on August 20,  2022 and revised on August 20, 2022'
+nummatches1 = re.findall(regexescape, strwithnums1)
+print(nummatches1)
+
+# Period(.)
+regexpatper = r'[a].' # a in square brackets followed by a . means any character except new line character
+matchesper = re.findall(regexpatper, fruitsstr)
+print(matchesper)
+
+# Zero or more times(*)
+fruitsstr1 = '''Apple and banana are fuits''' # . any character, + any character one or more times 
+regexreppatper = r'[a].*'
+mulmatches = re.findall(regexreppatper, fruitsstr1)
+print(mulmatches)
+
+# Zero or one time(?)
+emailtxt = '''I am not sure if there is a convention how to write the word e-mail.
+Some people write it as email others may write it as Email or E-mail.'''
+regexem = r'[Ee]-?mail' # ? means that - is optional
+matchesem = re.findall(regexem, emailtxt)
+print(matchesem)
+
+# Quantifier in regex: specify the length of substring we are looking for in a textquanttxt = 
+strwithnums = 'This regular expression example was made on August 20,  2022 and revised on August 20, 2022'
+regexquant = r'\d{4}'
+yearsinthestr = re.findall(regexquant, strwithnums)
+print(yearsinthestr)
+
+regexyearanddays = r'\d{1,4}'
+dayandyearsinstr = re.findall(regexyearanddays, strwithnums)
+print(dayandyearsinstr)
+
+# Cart ^: starts with
+regexstartswith = r'^This'
+startswithmatch = re.findall(regexstartswith, strwithnums)
+print(startswithmatch)
+
+# Negation 
+regexnegation = r'[^A-Za-z ]+' # ^ means negation not A to Z or a to z, no spaces
+matchesnegation = re.findall(regexnegation, strwithnums)
+print(matchesnegation)
