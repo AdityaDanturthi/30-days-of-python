@@ -137,7 +137,7 @@ matchesnegation = re.findall(regexnegation, strwithnums)
 print(matchesnegation)
 
 # Excercises: Level 1
-# Most frequent word in the following paragraph
+# 1. Most frequent word in the following paragraph
 paragraph = 'I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.'
 regexsplit = r' '
 strwithoutperiod = re.sub('\.','',paragraph)
@@ -163,4 +163,16 @@ res = sorted(zipped, key = lambda x: x[1], reverse = True)
 for key in res:
     print(key)
 
-
+# 2. The position of some particles on the horizontal x-axis are -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers from this whole text and find the distance between the two furthest particles.
+exertxt = 'The position of some particles on the horizontal x-axis are -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers from this whole text and find the distance between the two furthest particles.'
+regexexer = r'[-| ]\d+'
+txtnums = re.findall(regexexer,exertxt)
+inttxtnums =[]
+for num in txtnums:
+    intnums = int(num)
+    inttxtnums.append(intnums)
+print(inttxtnums)
+minfarthestpoint = min(inttxtnums)
+maxfarthestpoint = max(inttxtnums)
+diff = maxfarthestpoint - minfarthestpoint
+print('Distance: ',diff)
