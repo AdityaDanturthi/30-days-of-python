@@ -135,3 +135,32 @@ print(startswithmatch)
 regexnegation = r'[^A-Za-z ]+' # ^ means negation not A to Z or a to z, no spaces
 matchesnegation = re.findall(regexnegation, strwithnums)
 print(matchesnegation)
+
+# Excercises: Level 1
+# Most frequent word in the following paragraph
+paragraph = 'I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.'
+regexsplit = r' '
+strwithoutperiod = re.sub('\.','',paragraph)
+print(strwithoutperiod)
+
+eachword = re.split(regexsplit, strwithoutperiod)
+
+eachuniqueword = set(eachword)
+
+eachuniquewordcount = []
+eachuniquewordcountlst = []
+for word in eachuniqueword:
+    i  = 0
+    for each in eachword:
+        if word == each:
+            i += 1
+    eachuniquewordcount.append(i)
+    eachuniquewordcountlst.append(word)
+
+zipped = zip(eachuniquewordcountlst, eachuniquewordcount)
+res = sorted(zipped, key = lambda x: x[1], reverse = True)
+
+for key in res:
+    print(key)
+
+
