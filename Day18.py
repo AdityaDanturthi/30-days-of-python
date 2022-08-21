@@ -176,3 +176,8 @@ minfarthestpoint = min(inttxtnums)
 maxfarthestpoint = max(inttxtnums)
 diff = maxfarthestpoint - minfarthestpoint
 print('Distance: ',diff)
+
+# Exercise: level 2: Write a pattern which identifies if a string is a valid python variable
+def isvalidpythonvarname(varname):
+    return bool(re.search(r'^[_a-z]\w*$',varname))
+print(isvalidpythonvarname('firstname'))  
