@@ -61,4 +61,18 @@ print(easystr)
 # re.split(): takes a string, splits it at the match points, returns a list
 print(re.split('\n',easystr)) # returns a list with split strings
 
+# Writing RegEx patterns: for declaring a str variable we use single or double quotes, However, to declare a regex variable we use r''.
+
+regexapple = r'apple'
+txtfruits = 'Apple and banana are fruits. An old cliche says an apple a day a doctor way has been replaced by a banana a day keeps the doctor far far away. '
+matches = re.findall(regexapple, txtfruits)
+print(matches)
+
+# To ignore the case and include all matches
+matchescaseinsensitive = re.findall(regexapple, txtfruits,re.I)
+print(matchescaseinsensitive)
+
+regexapplebothcases = r'[Aa]pple'
+matchescaseinsensitive1 = re.findall(regexapplebothcases, txtfruits)
+print(matchescaseinsensitive1)
 
