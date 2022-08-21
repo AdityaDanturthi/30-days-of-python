@@ -181,3 +181,30 @@ print('Distance: ',diff)
 def isvalidpythonvarname(varname):
     return bool(re.search(r'^[_a-z]\w*$',varname))
 print(isvalidpythonvarname('firstname'))  
+
+# Exercise: Level 3: Clean the following text. After cleaning, count three most frequent words in the string.
+sentence = '''%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?'''
+cleansentence = re.sub('[@|$|%|.|;|?|!|#|&|,]','',sentence)
+
+
+words = re.split(' ', cleansentence)
+
+uniquewords = set(words)
+
+wordcount =[]
+wordlst = []
+for uniqueword in uniquewords:
+    i = 0
+    for word in words:
+        if word == uniqueword:
+            i += 1
+    wordcount.append(i)
+    wordlst.append(uniqueword)
+
+wordcountandwordzipped = zip(wordlst,wordcount)
+sortedcounts = sorted(wordcountandwordzipped, key = lambda x: x[1], reverse = True)
+
+for key in sortedcounts:
+    print(key)
+
+
