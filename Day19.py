@@ -41,3 +41,11 @@ with open('example.txt', 'a') as f:
 with open('example.txt') as f:
     lines1 = f.read().splitlines()
     print(lines1)
+
+# 'w' creates a new file, if it doesn't exist
+with open('writingfileexample.txt', 'w') as f:
+    f.write('This will written in a new file!')
+
+with open('writingfileexample.txt') as f:
+    newfile = f.read().splitlines()
+    print(newfile)
