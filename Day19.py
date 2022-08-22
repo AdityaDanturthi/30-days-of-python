@@ -27,3 +27,17 @@ splitlines = f.read().splitlines()
 print(type(splitlines))
 print(splitlines)
 f.close()
+
+# Closing a file automatically
+with open('example.txt') as f:
+    splitlines = f.read().splitlines()
+    print(type(splitlines))
+    print(splitlines)
+
+# Opening files for writing and appending
+with open('example.txt', 'a') as f:
+    f.write('This text has to be appended at the end.')
+
+with open('example.txt') as f:
+    lines1 = f.read().splitlines()
+    print(lines1)
