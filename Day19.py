@@ -58,3 +58,23 @@ if os.path.exists('p:/c/writingfileexample.txt'):
 else:
     print('File does not exist!')
 
+# File types
+# Files with JSON extension: JSON very similar to python dictionary except it is written on a single line
+
+# Python dictionary
+DetailsDct = {
+    'firstname': 'Aditya',
+    'lastname': 'Danturthi',
+    'skills': ['Python', 'JavaScript', 'C'],
+    'age': 260
+}
+
+# JSON
+DetailsJSON = "{'firstname': 'Aditya', 'lastname': 'Danturthi', 'skills': ['Python', 'JavaScript', 'C'],'age': 260}"
+multilineJSON = '''{
+    'firstname': 'Aditya',
+    'lastname': 'Danturthi',
+    'skills': ['Python', 'JavaScript', 'C'],
+    'age': 260    
+}'''
+
