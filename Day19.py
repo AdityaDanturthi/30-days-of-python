@@ -44,8 +44,17 @@ with open('example.txt') as f:
 
 # 'w' creates a new file, if it doesn't exist
 with open('writingfileexample.txt', 'w') as f:
-    f.write('This will written in a new file!')
+    f.write('This will be written in a new file!')
 
 with open('writingfileexample.txt') as f:
     newfile = f.read().splitlines()
     print(newfile)
+
+# Deleting a file
+import os
+if os.path.exists('p:/c/writingfileexample.txt'):
+    os.remove('p:/c/writingfileexample.txt')
+    print('Sucessfully deleted!')
+else:
+    print('File does not exist!')
+
