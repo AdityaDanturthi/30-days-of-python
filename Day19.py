@@ -21,3 +21,9 @@ lines = f.readlines()
 print(type(lines))
 print(lines)
 f.close()
+
+# splitlines(): another way to get all the lines
+splitlines = f.read().splitlines()
+print(type(splitlines))
+print(splitlines)
+f.close()
