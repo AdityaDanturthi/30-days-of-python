@@ -94,3 +94,23 @@ print(dcttoJSON)
 with open('example.json', 'w', encoding= 'utf-8') as f:
     json.dump(dcttoJSON, f, ensure_ascii= False, indent= 2)
 
+# File with csv extension
+import csv
+
+# with open('P:/c/example.csv', 'w') as f:
+#     f.write('Name,Country,Province,Skills')
+#     f.write(' Aditya, Canada, Newfoundland, Python')
+    
+
+with open('P:/c/example.csv') as f:
+    csvreader = csv.reader(f, delimiter=',')
+    linecount = 0
+    for row in csvreader:
+        if linecount == 0:
+            print(f'Column names are:{",".join(row)}')
+            linecount += 1
+        else:
+            print(
+                f'\t{row[0]} is a programmer. He lives in{row[2]},{row[1]}.')
+            linecount += 1
+    print(f'Number of lines: {linecount}')
