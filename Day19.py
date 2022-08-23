@@ -86,6 +86,11 @@ print(jsontodct)
 print(jsontodct['firstname'])
 
 # Converting dictionary to JSON
-DetailsDcttoJSON = json.dumps(DetailsDct, indent=2) 
-print(type(DetailsDcttoJSON))
-print(DetailsDcttoJSON)
+dcttoJSON = json.dumps(DetailsDct, indent=2) 
+print(type(dcttoJSON))
+print(dcttoJSON)
+
+# Saving as JSON file
+with open('example.json', 'w', encoding= 'utf-8') as f:
+    json.dump(dcttoJSON, f, ensure_ascii= False, indent= 2)
+
