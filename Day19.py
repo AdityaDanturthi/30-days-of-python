@@ -114,3 +114,10 @@ with open('P:/c/example.csv') as f:
                 f'\t{row[0]} is a programmer. He lives in{row[2]},{row[1]}.')
             linecount += 1
     print(f'Number of lines: {linecount}')
+
+# File with xls extension
+import xlrd
+
+excelworkbook = xlrd.open_workbook('example.xls')
+print(excelworkbook.nsheets)
+print(excelworkbook.sheet_names)
