@@ -84,3 +84,8 @@ jsontodct = json.loads(multilineJSON)
 print(type(jsontodct))
 print(jsontodct)
 print(jsontodct['firstname'])
+
+# Converting dictionary to JSON
+DetailsDcttoJSON = json.dumps(DetailsDct, indent=2) 
+print(type(DetailsDcttoJSON))
+print(DetailsDcttoJSON)
