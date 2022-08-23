@@ -121,3 +121,14 @@ import xlrd
 excelworkbook = xlrd.open_workbook('example.xls')
 print(excelworkbook.nsheets)
 print(excelworkbook.sheet_names)
+
+# File with xml extension
+import xml.etree.ElementTree as ET
+tree = ET.parse('P:/c/example.xml')
+root = tree.getroot() # details tag
+print('Root tag: ',root.tag)
+print('Root attribute: ', root.attrib)
+for child in root:
+    print('Field: ',child.tag)
+
+
