@@ -2,6 +2,10 @@
     - [PIP version](#pip-version)
     - [Web browser module](#web-browser-module)
     - [Uninstalling packages](#uninstalling-packages)
+    - [List of packages](#list-of-packages)
+    - [Package information](#package-information)
+        - [Detailed package information](#for-even-more-detailed-information)
+    - [PIP freeze](#pip-freeze)    
 
 
 
@@ -31,3 +35,29 @@ webbrowser.open_new_tab(url)
 ```sh
 pip uninstall packagename
 ```
+### List of packages
+
+```sh
+pip list
+```
+#### Package information
+
+```sh
+pip show packagename
+```
+
+#### For even more detailed information
+
+```sh
+pip show --verbose packagename
+```
+
+### PIP freeze
+#### List of all packages installed along with their version to use in requirements.txt
+
+```sh
+matplotlib==3.5.2
+numpy==1.22.2
+scikit-learn==1.0.2
+```
+
