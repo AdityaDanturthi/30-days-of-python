@@ -1,4 +1,4 @@
-- [Contents]
+- Contents
     - [PIP version](#pip-version)
     - [Web browser module](#web-browser-module)
     - [Uninstalling packages](#uninstalling-packages)
