@@ -46,7 +46,7 @@ pip list
 pip show packagename
 ```
 
-#### For even more detailed information
+### For even more detailed information
 
 ```sh
 pip show --verbose packagename
