@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<details gender="male">
+  <name>Aditya</name>
+  <country>Canada</country>
+  <province>Newfoundland</province>
+  <skills>
+    <skill>Python</skill>
+    <skill>Javascript</skill>
+    <skill>Power BI</skill>
+  </skills>
+</details>
