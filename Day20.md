@@ -1,20 +1,20 @@
-- Contents
-    - [PIP version](#pip-version)
-    - [Web browser module](#web-browser-module)
-    - [Uninstalling packages](#uninstalling-packages)
-    - [List of packages](#list-of-packages)
-    - [Package information](#package-information)
-        - [Detailed package information](#for-even-more-detailed-information)
-    - [PIP freeze](#pip-freeze)    
-    - [Reading from a URL](#reading-from-a-url)
-        - [Methods from requests module](#will-use-the-following-methods-from-the-requests-module)
-        - [Reading from an API using requests module](#reading-from-an-api-using-the-requests-module)
-
+## Contents
+- [PIP version](#pip-version)
+- [Web browser module](#web-browser-module)
+- [Uninstalling packages](#uninstalling-packages)
+- [List of packages](#list-of-packages)
+- [Package information](#package-information)
+    - [Detailed package information](#for-even-more-detailed-information)
+- [PIP freeze](#pip-freeze)    
+- [Reading from a URL](#reading-from-a-url)
+    - [Methods from requests module](#will-use-the-following-methods-from-the-requests-module)
+    - [Reading from an API using requests module](#reading-from-an-api-using-the-requests-module)
+- [Creating a package](#creating-a-package)
 
 
 ## Python PIP - Python Package Manager
 
-### PIP version
+#### PIP version
 
 ```sh
 pip --version
@@ -24,7 +24,7 @@ pip --version
 pip 22.2
 ```
 
-### Web browser module
+## Web browser module
 
 ```py
 import webbrowser # Web browser module to open websites
@@ -33,12 +33,12 @@ url = 'https://ca.linkedin.com/in/adityadanturthi'
 webbrowser.open_new_tab(url)
 ```
 
-### Uninstalling packages
+## Uninstalling packages
 
 ```sh
 pip uninstall packagename
 ```
-### List of packages
+## List of packages
 
 ```sh
 pip list
@@ -49,13 +49,13 @@ pip list
 pip show packagename
 ```
 
-### For even more detailed information
+#### For even more detailed information
 
 ```sh
 pip show --verbose packagename
 ```
 
-### PIP freeze
+## PIP freeze
 #### List of all packages installed along with their version to use in requirements.txt
 
 ```sh
@@ -64,7 +64,7 @@ numpy==1.22.2
 scikit-learn==1.0.2
 ```
 
-# Reading from a URL
+## Reading from a URL
 
 ```sh
 pip install requests
@@ -99,3 +99,25 @@ countries = responsecountries.json() # Used json() method since we are fetching 
 print(countries[:5]) # Sliced first 5 countries in the json object
 ```
 
+## Creating a package
+#### A package can contain multiple modules
+
+```py
+>>> from arithmeticandgreetpackage import arithmetic
+>>> arithmetic.addnums(1, 2, 3, 4)
+10
+>>> arithmetic.subtract(2, 1)
+1
+>>> arithmetic.multiple(2, 1)
+2
+>>> arithmetic.division(2, 1)
+2.0
+>>> arithmetic.remainder(2, 1)
+0
+>>> arithmetic.power(2, 1)
+2
+>>> from arithmeticandgreetpackage import greet
+>>> greet.greeting('Aditya', 'Danturthi')
+'Aditya Danturthi, how are you?'
+>>>
+```
