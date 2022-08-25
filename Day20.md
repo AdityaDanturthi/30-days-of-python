@@ -61,3 +61,16 @@ numpy==1.22.2
 scikit-learn==1.0.2
 ```
 
+# Reading from a URL
+
+```sh
+pip install requests
+```
+
+#### Will use the following methods from the *requests* module:
+    - _get()_: to open a network and fetch data from url (returns a response object)
+    - *status_code*: After fetching the data, we can check the status of the operation (success or error)
+    - _headers_: To check the header types
+    - _text_: To extract text from the fetched response object
+    - _json_: To extract json data. Let's read the text file from  https://www.w3.org/TR/PNG/iso_8859-1.txt
+    
