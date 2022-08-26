@@ -29,4 +29,15 @@ p = Person('Aditya', 'NL', 260)
 print(f' Hi %s from %s of age %d' %(p.name,p.province,p.age))
 print(p)
 
+# Object methods: Objects can have methods. Methods are functions which belong to an object.
+class Person:
+    def __init__(self, *args):
+        self.name = args[0]
+        self.province = args[1]
+        self.age = args[2]
+    def details(self): 
+        return f'Hi {self.name} from {self.province} of age {self.age}'
+
+p = Person('Aditya','NL',260)
+print(p.details())
 
