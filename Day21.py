@@ -88,3 +88,36 @@ p2 = Person('Alex', 'QC', 260)
 #print(p2.details())
 p2.addskills('Numpy')
 print(p2.detailswithskills())
+
+# Passing multiple parameters in a single method 
+class Person:
+    def __init__(self, name = 'Aditya', province = 'NL', age = 260) :
+        self.name = name
+        self.province = province
+        self.age = age
+        self.skills = []
+    
+    def details(self):
+        return f'Hi {self.name} from {self.province} of age {self.age}'
+
+    def addskills(self,*args):
+        for i in args:
+          self.skills.append(i)
+        
+    
+    def detailswithskills(self):
+        skillstr = ''
+        for i in self.skills:
+            skillstr += i+', '    
+        skillstr = skillstr[:-2]
+        return f'Hi {self.name} from {self.province} of age {self.age} is skilled in {skillstr}'
+
+p1 = Person()
+p1.addskills('Javascript', 'Python', 'Java', 'C')
+#print(p1.details)
+print(p1.detailswithskills())
+
+p2 = Person('Alex', 'QC', 260)
+#print(p2.details())
+p2.addskills('Numpy')
+print(p2.detailswithskills())
