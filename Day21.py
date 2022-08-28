@@ -131,3 +131,22 @@ s1 = Student('Adi', 'NL', 260)
 print(s1.details())
 s1.addskills('Python', 'Javascript', 'C', 'Java')
 print(s1.detailswithskills())
+
+# Overriding parent method
+class Student(Person):
+    def __init__(self, name = 'Aditya', province = 'NL', age = 260, car = 'Tesla'):
+        self.car = car
+        super().__init__(name, province,age)
+    
+    def detailswithskills(self):
+        car = 'doesn\'t have a car' if self.car == ' ' else ' '
+        skillstr = ''
+        for i in self.skills:
+            skillstr += i+', '    
+        skillstr = skillstr[:-2]
+        return f'Hi {self.name} from {self.province} of age {self.age} is skilled in {skillstr} and drives a {self.car}'
+
+s1 = Student('Adi', 'NL', 260, 'Ford')
+print(s1.details())
+s1.addskills('Python', 'Javascript', 'C', 'Java')
+print(s1.detailswithskills())
