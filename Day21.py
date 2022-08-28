@@ -121,3 +121,13 @@ p2 = Person('Alex', 'QC', 260)
 #print(p2.details())
 p2.addskills('Numpy')
 print(p2.detailswithskills())
+
+# Inheritance: creating another class and inheriting properties of parent class
+
+class Student(Person):
+    pass
+
+s1 = Student('Adi', 'NL', 260)
+print(s1.details())
+s1.addskills('Python', 'Javascript', 'C', 'Java')
+print(s1.detailswithskills())
