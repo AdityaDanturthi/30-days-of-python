@@ -19,3 +19,7 @@ nparray = np.array(pylist)
 print('Type: ', type(nparray))
 print(nparray)
 
+# Creating a float numpy array
+nparrayfloat = np.array(pylist, dtype = float)
+print('Type: ', type(nparrayfloat))
+print(nparrayfloat)
