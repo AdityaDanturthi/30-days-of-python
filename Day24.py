@@ -39,3 +39,12 @@ print(twodimlstnparrray)
 nparratolist = nparray.tolist()
 print(type(nparratolist))
 print(nparratolist)
+
+# Creating a numpy array from a tuple
+pytuple = (1,2,3,4,5)
+print('pytuple type: ', type(pytuple))
+print(pytuple)
+nparrayfromtuple = np.array(pytuple)
+print(type(nparrayfromtuple))
+print(nparrayfromtuple)
+
