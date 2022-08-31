@@ -48,3 +48,7 @@ nparrayfromtuple = np.array(pytuple)
 print(type(nparrayfromtuple))
 print(nparrayfromtuple)
 
+# Shape of numpy array
+print(nparray)
+print(nparray.shape)
+print(twodimlstnparrray.shape)
