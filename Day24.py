@@ -52,3 +52,13 @@ print(nparrayfromtuple)
 print(nparray)
 print(nparray.shape)
 print(twodimlstnparrray.shape)
+
+# Data type of numpy array
+intlist = [-2, -1, 0 ,1 ,2]
+intnparray = np.array(intlist)
+
+floatnparray = np.array(intlist, dtype = float)
+print(intnparray)
+print(intnparray.dtype)
+print(floatnparray)
+print(floatnparray.dtype)
