@@ -62,3 +62,37 @@ print(intnparray)
 print(intnparray.dtype)
 print(floatnparray)
 print(floatnparray.dtype)
+
+print('Size of nparray: ', nparray.size)
+print('Size of two dimensional array: ', twodimlstnparrray.size)
+
+# Mathematical operations using numpy
+
+# Addition
+nparrayplus10 = nparray + 10
+print(nparrayplus10)
+
+# Subtraction
+nparrayorignal  = nparrayplus10 -10
+print(nparrayorignal)
+
+# Multiplication
+nparraymul = nparray * 10
+print(nparraymul)
+
+# Division
+nparraydiv = nparray / 10
+print(nparraydiv)
+
+# Modulus
+nparraymod = nparray % 2
+print(nparraymod)
+
+# Floor division
+nparrayfloor = nparray // 2
+print(nparrayfloor)
+
+# Exponential
+nparrayexpo = nparray ** 2
+print(nparrayexpo)
+
