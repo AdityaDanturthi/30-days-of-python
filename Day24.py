@@ -96,3 +96,24 @@ print(nparrayfloor)
 nparrayexpo = nparray ** 2
 print(nparrayexpo)
 
+# Checking data types
+print(intnparray.dtype)
+print(floatnparray.dtype)
+print(nparraybool.dtype)
+
+# Getting items from numpy array
+print(twodimlstnparrray[1])
+print(twodimlstnparrray[:,0])
+print(twodimlstnparrray[:,1])
+
+# Slicing numpy array
+firsttworowsandcolumns = twodimlstnparrray[0:2, 0:2]
+print(firsttworowsandcolumns)
+
+# Transpose a numpy array
+nparraytranspose = twodimlstnparrray[::]
+print(nparraytranspose)
+
+# Reversing rown and columns
+reversedrowsandcolumns = twodimlstnparrray[::-1, ::-1]
+print(reversedrowsandcolumns)
