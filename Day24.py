@@ -117,3 +117,7 @@ print(nparraytranspose)
 # Reversing rown and columns
 reversedrowsandcolumns = twodimlstnparrray[::-1, ::-1]
 print(reversedrowsandcolumns)
+
+# Printing a specific element in a 2d numpy array
+print(twodimlstnparrray)
+print(twodimlstnparrray[0,0]) # first element
