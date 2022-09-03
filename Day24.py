@@ -121,3 +121,13 @@ print(reversedrowsandcolumns)
 # Printing a specific element in a 2d numpy array
 print(twodimlstnparrray)
 print(twodimlstnparrray[0,0]) # first element
+
+# Numpy zeroes
+npzeroes = np.zeros((3,3), dtype= int, order = 'C')
+print(npzeroes)
+
+npones = np.ones((3,3), dtype= int, order = 'C')
+print(npones)
+
+nptwos = npones * 2
+print(nptwos)
