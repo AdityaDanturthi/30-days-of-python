@@ -152,8 +152,13 @@ nplstsum = nplst1 + nplst2
 print(nplstsum)
 
 # hstack
-print('Horizontal append: ', np.hstack(nplst1, nplst2))
+print('Horizontal append: ', np.hstack((nplst1, nplst2)))
 
 # vstack
-print('Vertical append: ', np.vstack(nplst1, nplst2))
+print('Vertical append: ', np.vstack((nplst1, nplst2)))
 
+# Generating random numbers
+
+# Generate a random float number
+randomfloat = np.random.random()
+print(randomfloat)
