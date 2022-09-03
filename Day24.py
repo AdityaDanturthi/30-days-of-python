@@ -131,3 +131,29 @@ print(npones)
 
 nptwos = npones * 2
 print(nptwos)
+
+# Reshape
+# numpy.reshape(), numoy.flatten()
+firstshape = np.array([(1,2,3), (4,5,6)])
+print(firstshape)
+
+reshaped = firstshape.reshape(3,2)
+print(reshaped)
+
+flattened = firstshape.flatten()
+print(flattened)
+
+# Horizontal stack
+nplst1 = np.array([1,2,3])
+nplst2 = np.array([4,5,6])
+
+nplstsum = nplst1 + nplst2
+
+print(nplstsum)
+
+# hstack
+print('Horizontal append: ', np.hstack(nplst1, nplst2))
+
+# vstack
+print('Vertical append: ', np.vstack(nplst1, nplst2))
+
