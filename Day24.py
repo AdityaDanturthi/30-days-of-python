@@ -1,6 +1,7 @@
 # Statistical Analysis
 
 # Numpy
+from random import randint
 import numpy as np
 print('numpy version: ', np.__version__)
 print(dir(np)) # prints available functions
@@ -162,3 +163,24 @@ print('Vertical append: ', np.vstack((nplst1, nplst2)))
 # Generate a random float number
 randomfloat = np.random.random()
 print(randomfloat)
+
+# Generate a random 5 float numbers
+randomfloat5 = np.random.random(5)
+print(randomfloat5)
+
+# Generate random integers in a specific range
+randomint = np.random.randint(0,9)
+print(randomint)
+
+# Generate random number of integers in a specific range
+randomint4 = np.random.randint(0,9, size = 4)
+print(randomint4)
+
+randintlst = randomint4.tolist()
+print(randintlst)
+
+# Numpy and statistics
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set()
+plt.hist(nparray, color = "blue", bins = 40)
