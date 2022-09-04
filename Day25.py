@@ -16,3 +16,12 @@ print(serieswithcustomindex)
 fruits = ['apple', 'pineapple', 'orange']
 fruitsseries = pd.Series(fruits, index= [1,2,3])
 print(fruitsseries)
+
+# Creating a pandas series from a dictionary
+dct = {'name': 'Aditya', 'country': 'Canada', 'age': 260}
+dcttoseries = pd.Series(dct)
+print(dcttoseries)
+
+# Creating a constant pandas series
+constantseries = pd.Series(2, index= [1,2,3,4,5])
+print(constantseries)
