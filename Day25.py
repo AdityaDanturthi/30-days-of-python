@@ -25,3 +25,18 @@ print(dcttoseries)
 # Creating a constant pandas series
 constantseries = pd.Series(2, index= [1,2,3,4,5])
 print(constantseries)
+
+# Creating a pandas series using linspace
+s = pd.Series(np.linspace(5, 20, 10))
+print(s)
+
+# DataFrames 
+# Creating a dataframe from a list of lists
+
+data = [
+    ['Aditya', 'Canada', 'NL'],
+    ['Alex', 'Canada', 'QC']
+]
+
+listtodf = pd.DataFrame(data, columns = ['Name', 'Country', 'Province'])
+print(listtodf)
