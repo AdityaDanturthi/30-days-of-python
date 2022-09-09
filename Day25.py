@@ -40,3 +40,14 @@ data = [
 
 listtodf = pd.DataFrame(data, columns = ['Name', 'Country', 'Province'])
 print(listtodf)
+
+# Creating a dataframe from a dictionary
+dct  =  {
+    'Name': ['Aditya', 'Alex'],
+    'Country': ['Canada', 'Canada'],
+    'Province': ['NL', 'QC']
+}
+
+dcttodf = pd.DataFrame(dct)
+print(dcttodf)
+
