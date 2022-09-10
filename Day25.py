@@ -82,5 +82,40 @@ print(weights.describe())
 
 print(hwdf.describe())
 
+# Modifying a dataframe
 
+# Adding a new column
+df = dcttodf.iloc[:,1:3]
+df['Name'] = ['A', 'B']
+heightdata =  [170,171]
+weightdata = [70,71]
+df['Weight'] = weightdata
+df['Height'] = heightdata
+print(df)
 
+df['Height'] = df['Height'] * 0.01
+print(df)
+
+def bmicalc():
+    weights = df['Weight']
+    heights = df['Height']
+    bmi = []
+    for w,h in zip(weights, heights):
+        b = w/(h*h)
+        bmi.append(b)
+    return bmi
+
+bmi = bmicalc()
+
+df['BMI'] = bmi
+print(df)
+
+# Formatting a column
+df['BMI'] = round(df['BMI'], 2)
+print(df)
+
+df['birthyear'] = [1990, 1991]
+df['currentyear'] = 2022
+namecol = df.pop('Name')
+df.insert(0,namecol.name, namecol)
+print(df)
