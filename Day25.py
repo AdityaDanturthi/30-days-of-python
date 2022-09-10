@@ -51,3 +51,10 @@ dct  =  {
 dcttodf = pd.DataFrame(dct)
 print(dcttodf)
 
+# Creating dataframes from a list of dictionaries
+lstofdcts =  [
+    {'Name': 'Aditya', 'Country': 'Canada', 'Province': 'NL'},
+    {'Name':'Alex', 'Country':'Canada','Province': 'QC'}
+    ]
+lstofdctstodf = pd.DataFrame(lstofdcts)
+print(lstofdctstodf)
