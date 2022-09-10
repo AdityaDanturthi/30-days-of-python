@@ -119,3 +119,16 @@ df['currentyear'] = 2022
 namecol = df.pop('Name')
 df.insert(0,namecol.name, namecol)
 print(df)
+
+# Checking data types of columns
+print(df.Weight.dtype)
+print(df.Height.dtype)
+
+df['birthyear'] = df['birthyear'].astype('int')
+print(df['birthyear'].dtype)
+
+df['currentyear'] = df['currentyear'].astype('int')
+print(df['currentyear'].dtype)
+
+df['Age'] = df['currentyear'] - df['birthyear']
+print(df)
