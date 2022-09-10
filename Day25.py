@@ -58,3 +58,29 @@ lstofdcts =  [
     ]
 lstofdctstodf = pd.DataFrame(lstofdcts)
 print(lstofdctstodf)
+
+hwdf = pd.read_csv('weight-height.csv')
+
+# Data exploration
+print(hwdf.head())
+print(hwdf.tail())
+
+print(hwdf.shape)
+
+print(hwdf.columns)
+
+heights = hwdf['Height']
+print(heights)
+
+weights = hwdf['Weight']
+print(weights)
+
+print(len(heights) == len(weights))
+
+print(heights.describe())
+print(weights.describe())
+
+print(hwdf.describe())
+
+
+
