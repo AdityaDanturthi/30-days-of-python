@@ -43,3 +43,9 @@ hours = input('Hours: ')
 rate = input('Rate: ')
 print('Weekly earnings: ', hours*rate)
 
+# Rectangle
+lenofrectangle, widthofrectangle = input("Please input length and widht of the rectangle: ")
+areaofrectangle = lenofrectangle * widthofrectangle
+print("Area of rectagle: ", areaofrectangle)
+perimeterofrectangle = 2 * (lenofrectangle + widthofrectangle)
+print("Perimeter of rectagle: ", areaofrectangle)
