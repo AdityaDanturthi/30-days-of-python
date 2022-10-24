@@ -49,3 +49,11 @@ areaofrectangle = lenofrectangle * widthofrectangle
 print("Area of rectagle: ", areaofrectangle)
 perimeterofrectangle = 2 * (lenofrectangle + widthofrectangle)
 print("Perimeter of rectagle: ", areaofrectangle)
+
+# Circle
+pi = 3.14
+radius = input("Please input radius of the circle: ")
+area = pi*radius^2
+print("Area of circle: ",area)
+circumference = 2*pi*radius
+print("Circumference of the circle: ", circumference)
