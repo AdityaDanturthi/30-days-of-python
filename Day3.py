@@ -69,3 +69,9 @@ if (len('python') == len('dragon')):
     print('python and dragon are of the same length')
 else: 
     print('python and dragon are not of the same length')
+    
+# Use and operator to check if 'on' is found in both 'python' and 'dragon'
+if ('on' in 'python' and 'dragon'):
+    print('yes')
+else: 
+    print('no')
