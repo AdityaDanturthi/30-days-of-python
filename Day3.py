@@ -24,7 +24,7 @@ print('Exponentiation: ', 3**2)              # 9 (3*3)
 
 
 
-#Exercises
+# Exercises
 age = 260
 height = 6.0
 complex = 1+3j
@@ -63,3 +63,9 @@ for x in range(-1,-100,-1):
     y = x*x + 6*x + 9
     if y == 0:
         print(f"y = 0 at x = {x}")
+
+# Find the length of 'python' and 'dragon' and make a falsy comparison statement.
+if (len('python') == len('dragon')):
+    print('python and dragon are of the same length')
+else: 
+    print('python and dragon are not of the same length')
