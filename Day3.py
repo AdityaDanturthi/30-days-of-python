@@ -43,17 +43,23 @@ hours = input('Hours: ')
 rate = input('Rate: ')
 print('Weekly earnings: ', hours*rate)
 
-# Rectangle
+# Rectangle: Get length and width of a rectangle using prompt. Calculate its area (area = length x width) and perimeter (perimeter = 2 x (length + width))
 lenofrectangle, widthofrectangle = input("Please input length and widht of the rectangle: ")
 areaofrectangle = lenofrectangle * widthofrectangle
 print("Area of rectagle: ", areaofrectangle)
 perimeterofrectangle = 2 * (lenofrectangle + widthofrectangle)
 print("Perimeter of rectagle: ", areaofrectangle)
 
-# Circle
+# Circle: Get radius of a circle using prompt. Calculate the area (area = pi x r x r) and circumference (c = 2 x pi x r) where pi = 3.14.
 pi = 3.14
 radius = input("Please input radius of the circle: ")
 area = pi*radius^2
 print("Area of circle: ",area)
 circumference = 2*pi*radius
 print("Circumference of the circle: ", circumference)
+
+# Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is going to be 0.
+for x in range(-1,-100,-1):
+    y = x*x + 6*x + 9
+    if y == 0:
+        print(f"y = 0 at x = {x}")
