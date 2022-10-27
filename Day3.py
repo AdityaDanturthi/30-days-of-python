@@ -82,3 +82,11 @@ if ('jargon' in sentence):
     print('Yes!')
 else:
     print("No!")
+    
+# Find the length of the text python and convert the value to float and convert it to string.
+lenvar = len('python')
+print('Lenght of python in int = ', lenvar)
+lenfloat = float(lenvar)
+print('Lenght of python in float = ', lenfloat)
+string = str(lenfloat)
+print(f"{lenfloat} is of type:", type(string))
