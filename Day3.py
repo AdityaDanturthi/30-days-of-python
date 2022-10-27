@@ -75,3 +75,10 @@ if ('on' in 'python' and 'dragon'):
     print('yes')
 else: 
     print('no')
+    
+# I hope this course is not full of jargon. Use in operator to check if jargon is in the sentence.
+sentence = "I hope this course is not full of jargon."
+if ('jargon' in sentence):
+    print('Yes!')
+else:
+    print("No!")
