@@ -90,3 +90,10 @@ lenfloat = float(lenvar)
 print('Lenght of python in float = ', lenfloat)
 string = str(lenfloat)
 print(f"{lenfloat} is of type:", type(string))
+
+# Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python?
+number = int(input("Please input a number to check if it even or odd: "))
+if (number%2 == 0):
+    print(f"{number} is an even number!")
+else:
+    print(f"{number} is an odd number!")
