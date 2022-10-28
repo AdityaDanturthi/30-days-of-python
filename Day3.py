@@ -97,3 +97,9 @@ if (number%2 == 0):
     print(f"{number} is an even number!")
 else:
     print(f"{number} is an odd number!")
+    
+# Write a script that prompts the user to enter hours and rate per hour. Calculate pay of the person?
+hours = float(input("Please input the number of hours you work in a week: "))
+payrate = float(input("Please input your pay rate: "))
+weeklyearning = hours*payrate
+print(f"Your weekly earnings are: {weeklyearning}")
