@@ -103,3 +103,17 @@ hours = float(input("Please input the number of hours you work in a week: "))
 payrate = float(input("Please input your pay rate: "))
 weeklyearning = hours*payrate
 print(f"Your weekly earnings are: {weeklyearning}")
+
+# Write a Python script that displays the following table
+# 1 1 1 1 1
+# 2 1 2 4 8
+# 3 1 3 9 27
+# 4 1 4 16 64
+# 5 1 5 25 125
+for l in range(1,6):
+    res =1 
+    print(f"{l} 1 ", end = '', flush=True)
+    for m in range(1,4):
+        res = res * l
+        print(f"{res} ", end = '', flush=True)
+    print("\n")
