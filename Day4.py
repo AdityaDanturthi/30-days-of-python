@@ -148,3 +148,18 @@ print(challenge.isalnum()) # True
 
 challenge = "30 Days of Python"
 print(challenge.isalnum()) # False
+
+# Concatenate the string 'Thirty', 'Days', 'Of', 'Python' to a single string, 'Thirty Days Of Python'.
+str1 = 'Thirty'
+str2 = 'Days'
+str3 = 'Of'
+str4 = 'Python'
+concatstr = str1 +" "+str2+" "+str3+" "+str4
+print(concatstr)
+
+# Concatenate the string 'Coding', 'For' , 'All' to a single string, 'Coding For All'.
+strr1 = 'Coding'
+strr2 = 'For'
+strr3 = 'All'
+concstr = strr1+" "+strr2+" "+strr3
+print(concstr)
