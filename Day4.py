@@ -179,3 +179,22 @@ print(company.lower())
 print(company.capitalize())
 print(company.title())
 print(company.swapcase())
+
+# Cut(slice) out the first word of Coding For All string.
+firstletter = company[0]
+print(firstletter)
+# Check if Coding For All string contains a word Coding using the method index, find or other methods.
+if 'Coding' in company:
+    print('True')
+else:
+    print('False')
+# Replace the word coding in the string 'Coding For All' to Python.
+newstr = company.replace('Coding','Coding is')
+print(newstr)
+# Change Python for Everyone to Python for All using the replace method or other methods.
+orgstr = 'Python for Everyone'
+newstrr = orgstr.replace('Python for Everyone','Python for All')
+print(newstrr)
+# Split the string 'Coding For All' using space as the separator (split()) .
+w = company.split()
+print(w)
