@@ -163,3 +163,8 @@ strr2 = 'For'
 strr3 = 'All'
 concstr = strr1+" "+strr2+" "+strr3
 print(concstr)
+
+# Declare a variable named company and assign it to an initial value "Coding For All".
+company  = "Coding For All"
+# Print the variable company using print().
+print(company)
