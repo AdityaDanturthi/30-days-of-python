@@ -198,3 +198,29 @@ print(newstrr)
 # Split the string 'Coding For All' using space as the separator (split()) .
 w = company.split()
 print(w)
+
+# "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" split the string at the comma.
+topcompanies = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
+separate = topcompanies.split(sep = ',')
+print(separate)
+
+# What is the character at index 0 in the string Coding For All.
+firstchar = company[0]
+print("The charater at index 0 in Coding For All is", firstchar)
+
+# What is the last index of the string Coding For All.
+lastchar = company[-1]
+print("The last charater in Coding For All is", lastchar)
+
+# What character is at index 10 in "Coding For All" string.
+charatindex10 = company[10]
+print("The charater at index 10 in Coding For All is", charatindex10)
+
+# Create an acronym or an abbreviation for the name 'Python For Everyone'.
+pfe = 'Python For Everyone'
+abbr = pfe[0]+pfe[7]+pfe[11]
+print("Abbreviation for Python For Everyone is: ", abbr)
+
+# Create an acronym or an abbreviation for the name 'Coding For All'.
+abb = company[0]+company[7]+company[11]
+print("Abbreviation for Coding For All is: ", abb)
