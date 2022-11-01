@@ -253,3 +253,7 @@ print("Coding For All starts with Coding is:", company.startswith('Coding'))
 
 # Does 'Coding For All' end with a substring coding?
 print("Coding For All ends with Coding is:", company.endswith('Coding'))
+
+# '   Coding For All      '  , remove the left and right trailing spaces in the given string.
+stringwithspaces = '   Coding For All      ' 
+print(stringwithspaces.strip())
