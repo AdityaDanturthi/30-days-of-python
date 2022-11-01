@@ -247,3 +247,6 @@ import re
 cleansentence = sentence.replace("because",'').replace("is", '')
 cleansentence = re.sub("\s\s+" , " ", cleansentence)
 print(cleansentence)
+
+# Does 'Coding For All' start with a substring Coding?
+print("Coding For All starts with Coding is:", company.startswith('Coding'))
