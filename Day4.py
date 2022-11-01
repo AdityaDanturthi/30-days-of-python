@@ -250,3 +250,6 @@ print(cleansentence)
 
 # Does 'Coding For All' start with a substring Coding?
 print("Coding For All starts with Coding is:", company.startswith('Coding'))
+
+# Does 'Coding For All' end with a substring coding?
+print("Coding For All ends with Coding is:", company.endswith('Coding'))
