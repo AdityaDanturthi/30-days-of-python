@@ -236,3 +236,8 @@ print("F is at index:", positionoff)
 # Use rfind to determine the position of the last occurrence of l in Coding For All People.
 positionoflastl = company.rfind('l')
 print("Last of l is at index:", positionoflastl)
+
+# Use index or find to find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+firstbecause = sentence.find('because')
+print('First occurence of because is at:', firstbecause)
