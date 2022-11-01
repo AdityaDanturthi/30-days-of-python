@@ -232,3 +232,7 @@ print("C is at index:", positionofc)
 # Use index to determine the position of the first occurrence of F in Coding For All.
 positionoff = company.find('F')
 print("F is at index:", positionoff)
+
+# Use rfind to determine the position of the last occurrence of l in Coding For All People.
+positionoflastl = company.rfind('l')
+print("Last of l is at index:", positionoflastl)
