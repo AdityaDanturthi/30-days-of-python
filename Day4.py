@@ -226,6 +226,9 @@ abb = company[0]+company[7]+company[11]
 print("Abbreviation for Coding For All is: ", abb)
 
 # Use index to determine the position of the first occurrence of C in Coding For All.
-company = 'Coding For All'
 positionofc = company.find('C')
-print("C is a t index:", positionofc)
+print("C is at index:", positionofc)
+
+# Use index to determine the position of the first occurrence of F in Coding For All.
+positionoff = company.find('F')
+print("F is at index:", positionoff)
