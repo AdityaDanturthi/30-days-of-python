@@ -268,3 +268,8 @@ checkstr1 = str1.isidentifier()
 checkstr2 = str2.isidentifier()
 
 print("Is 30DaysOfPython an identifier? :", checkstr1)
+
+# The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
+libraries = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+listtostring = " ".join([str(item) for item in libraries])
+print("Popular python libraries:", listtostring)
