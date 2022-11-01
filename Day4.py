@@ -257,3 +257,14 @@ print("Coding For All ends with Coding is:", company.endswith('Coding'))
 # '   Coding For All      '  , remove the left and right trailing spaces in the given string.
 stringwithspaces = '   Coding For All      ' 
 print(stringwithspaces.strip())
+
+""" Which one of the following variables return True when we use the method isidentifier():
+30DaysOfPython
+thirty_days_of_python """
+str1 = "30DaysOfPython"
+str2 = "thirty_days_of_python"
+
+checkstr1 = str1.isidentifier()
+checkstr2 = str2.isidentifier()
+
+print("Is 30DaysOfPython an identifier? :", checkstr1)
