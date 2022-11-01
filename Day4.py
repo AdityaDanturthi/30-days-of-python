@@ -241,3 +241,9 @@ print("Last of l is at index:", positionoflastl)
 sentence = 'You cannot end a sentence with because because because is a conjunction'
 firstbecause = sentence.find('because')
 print('First occurence of because is at:', firstbecause)
+
+# Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+import re
+cleansentence = sentence.replace("because",'').replace("is", '')
+cleansentence = re.sub("\s\s+" , " ", cleansentence)
+print(cleansentence)
