@@ -282,3 +282,21 @@ Name      Age     Country
 Aditya  260     Canada"""
 
 print("Name\tAge\tCountry\nAditya\t260\tCanada")
+
+"""Use the string formatting method to display the following:
+radius = 10
+area = 3.14 * radius ** 2
+The area of a circle with radius 10 is 314 meters square."""
+
+print('radius = 10\narea = 3.14 * radius ** 2\nThe area of a circle with radius 10 is 314 meters square.')
+
+"""Make the following using string formatting methods:
+8 + 6 = 14
+8 - 6 = 2
+8 * 6 = 48
+8 / 6 = 1.33
+8 % 6 = 2
+8 // 6 = 1
+8 ** 6 = 262144"""
+
+print("8 + 6 = 14\n8 - 6 = 2\n8 * 6 = 48\n8 / 6 = 1.33\n8 % 6 = 2\n8 // 6 = 1 \n8** 6 = 262144")
