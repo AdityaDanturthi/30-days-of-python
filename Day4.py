@@ -273,3 +273,6 @@ print("Is 30DaysOfPython an identifier? :", checkstr1)
 libraries = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
 listtostring = " ".join([str(item) for item in libraries])
 print("Popular python libraries:", listtostring)
+
+# Use the new line escape sequence to separate the following sentences: I am enjoying this challenge. I just wonder what is next.
+print("I am enjoying this challenge.\nI just wonder what is next.")
