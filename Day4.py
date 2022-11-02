@@ -276,3 +276,9 @@ print("Popular python libraries:", listtostring)
 
 # Use the new line escape sequence to separate the following sentences: I am enjoying this challenge. I just wonder what is next.
 print("I am enjoying this challenge.\nI just wonder what is next.")
+
+"""Use a tab escape sequence to write the following lines.
+Name      Age     Country
+Aditya  260     Canada"""
+
+print("Name\tAge\tCountry\nAditya\t260\tCanada")
