@@ -85,3 +85,25 @@ numbers.sort(reverse=True) # descending
 # sorted() returns the ordered list without modifying the original list
 print(numbers.sorted())
 
+# Exercises
+
+# Declare an empty list
+emptylist = []
+print(emptylist)
+
+# Declare a list with more than 5 items
+fiveitemlist = [1,2,3,4,5]
+print(fiveitemlist)
+
+# Find the length of your list
+print(len(fiveitemlist))
+
+# Get the first item, the middle item and the last item of the list
+print("First item:", fiveitemlist[0])
+middleitem = int((len(fiveitemlist) -1)/2)
+print("Middle item:", fiveitemlist[middleitem])
+print("Last item:",fiveitemlist[-1])
+
+# Declare a list called mixed_data_types, put your(name, age, height, marital status)
+mixedlist = ["Aditya", 260, 6.0, "Single"]
+print(mixedlist)
