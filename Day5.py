@@ -107,3 +107,34 @@ print("Last item:",fiveitemlist[-1])
 # Declare a list called mixed_data_types, put your(name, age, height, marital status)
 mixedlist = ["Aditya", 260, 6.0, "Single"]
 print(mixedlist)
+
+# Declare a list variable named it_companies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon.
+ITCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+
+# Print the list using print()
+print("List of IT companies:",ITCompanies)
+
+# Print the number of companies in the list
+print("Number of IT companies int the list:",len(ITCompanies))
+
+# Print the first, middle and last company
+print("First company in the list is",ITCompanies[0])
+middlecompany = int((len(ITCompanies) -1)/2)
+print("Middle company in the list is",ITCompanies[middlecompany])
+print("Last company in the list is",ITCompanies[-1])
+
+# Print the list after modifying one of the companies
+ITCompanies[5] = 'Netflix'
+print("Update list of IT companies:", ITCompanies)
+
+# Add an IT company to it_companies
+ITCompanies.append('Oracle')
+print(ITCompanies)
+
+# Insert an IT company in the middle of the companies list
+ITCompanies.insert(middlecompany, 'Alphabet')
+print(ITCompanies)
+
+# Change one of the it_companies names to uppercase (IBM excluded!)
+ITCompanies = [x.upper() for x in ITCompanies]
+print(ITCompanies)
