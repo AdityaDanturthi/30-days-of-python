@@ -154,3 +154,7 @@ if 'Google' in ITCompanies:
 # Sort the list using sort() method
 ITCompanies.sort()
 print(ITCompanies)
+
+# Reverse the list in descending order using reverse() method
+ITCompanies.sort(reverse= True)
+print(ITCompanies)
