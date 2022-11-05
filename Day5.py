@@ -138,3 +138,10 @@ print(ITCompanies)
 # Change one of the it_companies names to uppercase (IBM excluded!)
 ITCompanies[0] = ITCompanies[0].upper()
 print(ITCompanies)
+
+# Join the it_companies with a string '#;  '
+i = 0
+while i < (len(ITCompanies)):
+    ITCompanies[i] = '#;  '+ITCompanies[i]
+    i = i + 1
+print(ITCompanies)
