@@ -150,3 +150,7 @@ print(ITCompaniescopy)
 # Check if a certain company exists in the it_companies list.
 if 'Google' in ITCompanies:
     print('Google is in ITCompanies')
+
+# Sort the list using sort() method
+ITCompanies.sort()
+print(ITCompanies)
