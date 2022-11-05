@@ -158,3 +158,19 @@ print(ITCompanies)
 # Reverse the list in descending order using reverse() method
 ITCompanies.sort(reverse= True)
 print(ITCompanies)
+
+# Slice out the first 3 companies from the list
+firstthreeITcompanies = ITCompanies[:3]
+print("First three IT companies:", firstthreeITcompanies)
+
+# Slice out the last 3 companies from the list
+lastthreeITcompanies = ITCompanies[-3:]
+print("Last three IT companies:", lastthreeITcompanies)
+
+# Slice out the middle IT company or companies from the list
+middlecompany = int((len(ITCompanies)-1)/2)
+print("Middle IT company:", ITCompanies[middlecompany])
+
+# Remove the first IT company from the list
+removedfirstcompany = ITCompanies.pop(0)
+print(ITCompanies)
