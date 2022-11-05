@@ -136,5 +136,5 @@ ITCompanies.insert(middlecompany, 'Alphabet')
 print(ITCompanies)
 
 # Change one of the it_companies names to uppercase (IBM excluded!)
-ITCompanies = [x.upper() for x in ITCompanies]
+ITCompanies[0] = ITCompanies[0].upper()
 print(ITCompanies)
