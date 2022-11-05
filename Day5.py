@@ -140,8 +140,13 @@ ITCompanies[0] = ITCompanies[0].upper()
 print(ITCompanies)
 
 # Join the it_companies with a string '#;  '
+ITCompaniescopy = ITCompanies.copy()
 i = 0
 while i < (len(ITCompanies)):
-    ITCompanies[i] = '#;  '+ITCompanies[i]
+    ITCompaniescopy[i] = '#;  '+ITCompaniescopy[i]
     i = i + 1
-print(ITCompanies)
+print(ITCompaniescopy)
+
+# Check if a certain company exists in the it_companies list.
+if 'Google' in ITCompanies:
+    print('Google is in ITCompanies')
