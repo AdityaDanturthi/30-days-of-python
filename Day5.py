@@ -194,3 +194,17 @@ print("IT companies list:", ITCompanies)
 # Destroy the IT companies 
 ITCompanies = ITCompanies.clear()
 print(ITCompanies)
+
+"""Join the following lists:
+
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node','Express', 'MongoDB']"""
+
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node','Express', 'MongoDB']
+front_end.extend(back_end)
+print(front_end)
+
+# After joining the lists in previous question. Copy the joined list and assign it to a variable full_stack. Then insert Python and SQL after Redux.
+full_stack = front_end.copy()
+print(full_stack)
