@@ -173,4 +173,24 @@ print("Middle IT company:", ITCompanies[middlecompany])
 
 # Remove the first IT company from the list
 removedfirstcompany = ITCompanies.pop(0)
+print("Removed first company:", removedfirstcompany)
+print("New list:", ITCompanies)
+
+# Remove the middle IT company or companies from the list
+middlecompany = int((len(ITCompanies)-1)/2)
+removedmiddlecompany = ITCompanies.pop(middlecompany)
+print("Removed middle company:", removedmiddlecompany)
+print("New list:", ITCompanies)
+
+# Remove the last IT company from the list
+removedlastcompany = ITCompanies.pop(-1)
+print("Removed last company:", removedlastcompany)
+print("New list:", ITCompanies)
+
+# Remove all IT companies from the list
+ITCompanies = []
+print("IT companies list:", ITCompanies)
+
+# Destroy the IT companies 
+ITCompanies = ITCompanies.clear()
 print(ITCompanies)
