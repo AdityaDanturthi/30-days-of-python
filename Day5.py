@@ -449,3 +449,19 @@ countries = [
 
 middlecountry = int((len(countries)-1)/2)
 print("Middle country:", countries[middlecountry])
+
+# Divide the countries list into two equal lists if it is even if not one more country for the first half.
+print("Length of countries list:", len(countries))
+middlecountry = int((len(countries)-1)/2)
+middlecountry += 1
+firsthalf = countries[:middlecountry]
+print(firsthalf)
+secondhalf = countries[middlecountry:]
+print(secondhalf)
+
+"""['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']. Unpack the first three countries and the rest as scandic countries."""
+randomcountries =['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
+firstthreecountries = randomcountries[:3]
+scandiccountries = randomcountries[3:]
+print(firstthreecountries)
+print(scandiccountries)
