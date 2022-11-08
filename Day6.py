@@ -29,3 +29,11 @@ fruits = fruits + morefruits
 
 # Deleting items in a tuple (Note:It is not possible to remove a single item in a tuple but it is possible to delete the tuple itself using del.)
 del fruits
+
+# Exercises: Level 1
+
+# Create an empty tuple
+emptyTuple =()
+# Create a tuple containing fruits and vegetables
+fruits = ('Apple', 'Pineapple')
+vegetables = ('Cauliflower', 'Broccoli')
