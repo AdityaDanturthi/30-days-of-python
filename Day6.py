@@ -68,3 +68,18 @@ print("Foods:",FoodsTuple)
 # Change the about food_stuff_tp tuple to a food_stuff_lt list
 FoodsList = list(FoodsTuple)
 print("Foods:",FoodsList)
+
+# Slice out the middle item or items from the FoodsTuple tuple or FoodsList list
+middleitem = int((len(FoodsList)-1)/2)
+middleitem2 = middleitem + 1
+print(f"Since the length of the list is {len(FoodsList)}, which is even. The two middle of the list are {FoodsList[middleitem]} and {FoodsList[middleitem2]}")
+
+# Slice out the first three items and the last three items from FoodsList list
+firstThreeinFoodsList = FoodsList[:3]
+print(f"First three items in the list are {firstThreeinFoodsList}")
+
+lastThreeinFoodsList = FoodsList[3:]
+print(f"Last three items in the list are {lastThreeinFoodsList}")
+
+# Delete the FoodsTuple tuple completely
+del FoodsTuple
