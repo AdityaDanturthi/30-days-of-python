@@ -37,3 +37,10 @@ emptyTuple =()
 # Create a tuple containing fruits and vegetables
 fruits = ('Apple', 'Pineapple')
 vegetables = ('Cauliflower', 'Broccoli')
+
+# Join fruits and vegetables tuples and assign it to fruitsandvegetables
+fruitsandvegetables = fruits+vegetables
+print(fruitsandvegetables)
+
+# How many fruits and vegetables do you have?
+print(len(fruitsandvegetables))
