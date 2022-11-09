@@ -44,3 +44,27 @@ print(fruitsandvegetables)
 
 # How many fruits and vegetables do you have?
 print(len(fruitsandvegetables))
+
+# Join fruits and vegetables tuples and assign it to fruitsandvegetables
+fruitsandvegetables = fruits+vegetables
+print("Fruits and vegetables:",fruitsandvegetables)
+
+# How many fruits and vegetables do you have?
+print(len(fruitsandvegetables))
+
+# Exercises: Level 2
+
+# Unpack fruits and vegetables from fruitsandvegetables
+fruits1 = fruitsandvegetables[:2]
+print("Fruits:",fruits1)
+vegetables1 = fruitsandvegetables[2:]
+print("Vegetables:",vegetables1)
+
+# Create fruits, vegetables and animal products tuples. Join the three tuples and assign it to a variable called food_stuff_tp.
+animalProducts = ('Milk', 'Cheese')
+FoodsTuple = fruits1 + vegetables1 + animalProducts
+print("Foods:",FoodsTuple)
+
+# Change the about food_stuff_tp tuple to a food_stuff_lt list
+FoodsList = list(FoodsTuple)
+print("Foods:",FoodsList)
