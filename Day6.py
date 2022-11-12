@@ -83,3 +83,17 @@ print(f"Last three items in the list are {lastThreeinFoodsList}")
 
 # Delete the FoodsTuple tuple completely
 del FoodsTuple
+
+nordicCountries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
+
+# Check if 'Estonia' is a nordic country
+if 'Estonia' in nordicCountries:
+    print("Estonia is in nordicCountries tuple")
+else:
+    print("Estonia is not in nordicCountries tuple")
+    
+# Check if 'Iceland' is a nordic country
+if 'Iceland' in nordicCountries:
+    print("Iceland is in nordicCountries tuple")
+else:
+    print("Iceland is not in nordicCountries tuple")
