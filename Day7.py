@@ -120,3 +120,15 @@ print(B.symmetric_difference(A))
 # Delete the sets completely
 del A
 del B
+
+# Exercises: Level 3
+
+# Convert the ages to a set and compare the length of the list and the set, which one is bigger?
+ageSet = set(age)
+print("Is the length of the list is greater than lenght of set:", len(age) > len(ageSet))
+
+# I am a teacher and I love to inspire and teach people. How many unique words have been used in the sentence? Use the split methods and set to get the unique words.
+
+sentence = "I am a teacher and I love to inspire and teach people. How many unique words have been used in the sentence?"
+sentenceSet = sentence.split()
+print("Number of words in the sentence are:", len(sentenceSet))
