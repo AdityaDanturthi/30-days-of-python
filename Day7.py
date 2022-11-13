@@ -68,3 +68,29 @@ print(fruitsandvegetables.symmetric_difference(fruits))
 
 # Disjoint sets: If two sets don't have anythong in common they are called disjoint sets
 fruits.isdisjoint(vegetables) # True
+
+# Sets
+ITCompanies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+A = {19, 22, 24, 20, 25, 26}
+B = {19, 22, 20, 25, 26, 24, 28, 27}
+age = [22, 19, 24, 25, 26, 24, 25, 24]
+
+# Exercises: Level 1
+
+# Find the length of the set ITCompanies
+print("Length of ITCompanies set:",len(ITCompanies))
+
+# Add 'Twitter' to ITCompanies
+ITCompanies.add('Twitter')
+print(ITCompanies)
+
+# Insert multiple IT companies at once to the set ITCompanies
+ITCompanies.update(['Salesforce', 'Atlassian'])
+print(ITCompanies)
+
+# Remove one of the companies from the set ITCompanies
+ITCompanies.remove('Facebook')
+print(ITCompanies)
+
+# What is the difference between remove and discard
+# Remove throws an error if the item being removed is not present in the set. Discard in the other hand doesn't throw an error even if the item being removed is not present in the set.
