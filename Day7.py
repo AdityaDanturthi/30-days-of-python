@@ -94,3 +94,29 @@ print(ITCompanies)
 
 # What is the difference between remove and discard
 # Remove throws an error if the item being removed is not present in the set. Discard in the other hand doesn't throw an error even if the item being removed is not present in the set.
+
+# Exercises: Level 2
+
+A = {19, 22, 24, 20, 25, 26}
+B = {19, 22, 20, 25, 26, 24, 28, 27}
+
+# Join A and B
+C = A.union(B)
+print(C)
+
+# Find A intersection B
+print(A.intersection(B))
+
+# Is A subset of B
+print(A.issubset(B))
+print(B.issuperset(A))
+
+# Are A and B disjoint sets
+print(A.isdisjoint(B))
+
+# What is the symmetric difference between A and B
+print(B.symmetric_difference(A))
+
+# Delete the sets completely
+del A
+del B
