@@ -59,3 +59,19 @@ print(dctkeys)
 # Getting dictionary values as a list
 dctvalues = dct.values()
 print(dctvalues)
+
+# Exercises: Day 8
+
+# Create an empty dictionary called dog
+dog = {}
+
+# Add name, color, breed, legs, age to the dog dictionary
+dog = {'name':'Tom', 'breed': 'Newfie', 'age': 1}
+print(dog)
+
+# Create a student dictionary and add first_name, last_name, gender, age, marital status, skills, country, city and address as keys for the dictionary
+student = {'firstname':'', 'lastname':'','gender':'', 'maritalStatus':'', 'skills':'', 'country':''
+    , 'city':'', 'address':''}
+
+# Get the length of the student dictionary
+print(len(student))
