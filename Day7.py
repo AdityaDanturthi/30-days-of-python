@@ -131,4 +131,5 @@ print("Is the length of the list is greater than lenght of set:", len(age) > len
 
 sentence = "I am a teacher and I love to inspire and teach people. How many unique words have been used in the sentence?"
 sentenceSet = sentence.split()
+print("Words in a sentence into a set:", sentenceSet)
 print("Number of words in the sentence are:", len(sentenceSet))
