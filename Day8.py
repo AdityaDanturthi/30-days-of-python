@@ -88,3 +88,12 @@ print(student.keys())
 
 # Get the dictionary values as a list
 print(student.values())
+
+# Change the dictionary to a list of tuples using items() method
+print(student.items())
+
+# Delete one of the items in the dictionary
+del student['maritalStatus']
+
+# Delete one of the dictionaries
+del dog
