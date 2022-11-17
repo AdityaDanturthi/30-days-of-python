@@ -70,8 +70,21 @@ dog = {'name':'Tom', 'breed': 'Newfie', 'age': 1}
 print(dog)
 
 # Create a student dictionary and add first_name, last_name, gender, age, marital status, skills, country, city and address as keys for the dictionary
-student = {'firstname':'', 'lastname':'','gender':'', 'maritalStatus':'', 'skills':'', 'country':''
-    , 'city':'', 'address':''}
+student = {'firstname':'Aditya', 'lastname':'Danturthi','gender':'Male', 'maritalStatus':'Single', 'skills':['Python', 'HTML', 'Javascript', 'SQL', 'Tableau', 'Power BI'], 'country':'Canada'}
 
 # Get the length of the student dictionary
 print(len(student))
+
+# Get the value of skills and check the data type, it should be a list
+print(f"Skills in student dictionary is of type:{type(student['skills'])} and contains:{student['skills']} ")
+
+# Modify the skills values by adding one or two skills
+student['skills'].append('Pandas')
+student['skills'].append('Seaborn')
+print(student['skills'])
+
+# Get the dictionary keys as a list
+print(student.keys())
+
+# Get the dictionary values as a list
+print(student.values())
