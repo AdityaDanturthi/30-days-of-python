@@ -53,3 +53,22 @@ if user == 'admin' or accesslevel == 3:
     print('Access granted!')
 else:
     print('Access denied!')
+
+# Exercises: Day 9
+
+# Exercises: Level 1
+
+# Get user input using input(“Enter your age: ”). If user is 18 or older, give feedback: You are old enough to drive. If below 18 give feedback to wait for the missing amount of years. Output:
+"""Enter your age: 30
+You are old enough to learn to drive.
+Output:
+Enter your age: 15
+You need 3 more years to learn to drive."""
+
+age = int(input("Please enter your age:"))
+if age >= 18:
+    print("You are old enough to drive!")
+else:
+    temp = age
+    diff = 18 - temp
+    print(f"You can drive in {diff} year(s)!")
