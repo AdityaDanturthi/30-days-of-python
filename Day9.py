@@ -72,3 +72,21 @@ else:
     temp = age
     diff = 18 - temp
     print(f"You can drive in {diff} year(s)!")
+
+    # Compare the values of my_age and your_age using if … else. Who is older (me or you)? Use input(“Enter your age: ”) to get the age as input. You can use a nested condition to print 'year' for 1 year difference in age, 'years' for bigger differences, and a custom text if my_age = your_age. Output:
+"""Enter your age: 30
+You are 5 years older than me."""
+
+age = 26
+userage = int(input("Please enter your age:"))
+
+temp = userage
+diff = age - temp
+diff = abs(diff)
+
+if userage < age:
+    print(f"You are {diff} year(s) younger than me!")
+elif userage == age:
+    print("We are the same age!")
+elif userage > age:
+    print(f"You are {diff} year(s) older than me!")
