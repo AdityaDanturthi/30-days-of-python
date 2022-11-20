@@ -90,3 +90,17 @@ elif userage == age:
     print("We are the same age!")
 elif userage > age:
     print(f"You are {diff} year(s) older than me!")
+
+"""Write a code which gives grade to students according to theirs scores:
+
+80-100, A
+70-89, B
+60-69, C"""
+
+score = int(input("Please input your score:"))
+if score in range(80,101):
+    print("Grade: A")
+elif score in range(70,90):
+    print("Grade B")
+elif score in range(60,70):
+    print("Grade C")
