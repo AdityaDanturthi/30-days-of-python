@@ -124,3 +124,34 @@ elif month in spring:
     print("Spring!")
 elif month in summer:
     print("Summer!")
+
+    # Exercises: Level 3
+
+person={
+    'firstname': 'Aditya',
+    'lastname': 'Danturthi',
+    'age': 260,
+    'country': 'Canada',
+    'ismarried': False,
+    'skills': ['JavaScript', 'Power BI', 'Node', 'Tableau', 'Python']
+    }
+    
+# Check if the person dictionary has skills key, if so print out the middle skill in the skills list.
+print('Skills exists in the dictionary:',"skills" in person)
+
+# Check if the person dictionary has skills key, if so check if the person has 'Python' skill and print out the result.
+print("Python is present in skills:","Python" in person['skills'])
+
+
+# If a person skills has only JavaScript and React, print('He is a front end developer'), if the person skills has Node, Python, MongoDB, print('He is a backend developer'), if the person skills has React, Node and MongoDB, Print('He is a fullstack developer'), else print('unknown title') - for more accurate results more conditions can be nested!
+if ("Python" in person['skills']) & ("Power BI" in person['skills']):
+    print("Hi is a Data Scientist!")
+elif ("Python" in person['skills']) & ("JavaScript" in person['skills']) & ("Node" in person['skills']):
+    print("He is a Software Developer!")
+
+"""If the person is married and if he lives in Finland, print the information in the following format:
+    Asabeneh lives in Finland. He is married."""
+if (person['ismarried'] == 'True') & (person['country'] =="Canada"):
+    print(f"{person['firstname']} is married. He lives in {person['country']}!")
+else:
+    print(f"{person['firstname']} is single. He lives in {person['country']}!")
