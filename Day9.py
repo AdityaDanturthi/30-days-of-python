@@ -125,7 +125,7 @@ elif month in spring:
 elif month in summer:
     print("Summer!")
 
-    # Exercises: Level 3
+# Exercises: Level 3
 
 person={
     'firstname': 'Aditya',
@@ -150,7 +150,7 @@ elif ("Python" in person['skills']) & ("JavaScript" in person['skills']) & ("Nod
     print("He is a Software Developer!")
 
 """If the person is married and if he lives in Finland, print the information in the following format:
-    Asabeneh lives in Finland. He is married."""
+    first name lives in country. He is married."""
 if (person['ismarried'] == 'True') & (person['country'] =="Canada"):
     print(f"{person['firstname']} is married. He lives in {person['country']}!")
 else:
