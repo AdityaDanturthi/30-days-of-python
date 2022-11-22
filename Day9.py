@@ -104,3 +104,21 @@ elif score in range(70,90):
     print("Grade B")
 elif score in range(60,70):
     print("Grade C")
+
+    # Check if the season is Autumn, Winter, Spring or Summer. If the user input is: September, October or November, the season is Autumn. December, January or February, the season is Winter. March, April or May, the season is Spring June, July or August, the season is Summer
+
+autumn =['september', 'october', 'november']
+winter = ['december', 'january', 'february']
+spring = ['march', 'april', 'may']
+summer = ['june', 'july', 'august']
+
+month = input("Please input a month to know the season:")
+
+if month in autumn:
+    print("Autumn!")
+elif month in winter:
+    print("Winter!")
+elif month in spring:
+    print("Spring!")
+elif month in summer:
+    print("Summer!")
