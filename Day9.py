@@ -73,7 +73,7 @@ else:
     diff = 18 - temp
     print(f"You can drive in {diff} year(s)!")
 
-    # Compare the values of my_age and your_age using if … else. Who is older (me or you)? Use input(“Enter your age: ”) to get the age as input. You can use a nested condition to print 'year' for 1 year difference in age, 'years' for bigger differences, and a custom text if my_age = your_age. Output:
+# Compare the values of my_age and your_age using if … else. Who is older (me or you)? Use input(“Enter your age: ”) to get the age as input. You can use a nested condition to print 'year' for 1 year difference in age, 'years' for bigger differences, and a custom text if my_age = your_age. Output:
 """Enter your age: 30
 You are 5 years older than me."""
 
@@ -91,6 +91,8 @@ elif userage == age:
 elif userage > age:
     print(f"You are {diff} year(s) older than me!")
 
+# Exercises: Level 2
+
 """Write a code which gives grade to students according to theirs scores:
 
 80-100, A
@@ -105,7 +107,7 @@ elif score in range(70,90):
 elif score in range(60,70):
     print("Grade C")
 
-    # Check if the season is Autumn, Winter, Spring or Summer. If the user input is: September, October or November, the season is Autumn. December, January or February, the season is Winter. March, April or May, the season is Spring June, July or August, the season is Summer
+# Check if the season is Autumn, Winter, Spring or Summer. If the user input is: September, October or November, the season is Autumn. December, January or February, the season is Winter. March, April or May, the season is Spring June, July or August, the season is Summer
 
 autumn =['september', 'october', 'november']
 winter = ['december', 'january', 'february']
