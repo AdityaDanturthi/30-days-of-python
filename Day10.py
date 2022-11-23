@@ -189,9 +189,19 @@ for i in range(11):
         print(f"{i} x {i} = {temp}")
 print()
 
-
 # Iterate through the list, ['Python', 'Numpy','Pandas','Django', 'Flask'] using a for loop and print out the items.
 
 langlist = ['Python', 'Numpy','Pandas','Django', 'Flask']
 for l in langlist:
     print(l)
+
+# Use for loop to iterate from 0 to 100 and print only even numbers
+print("Even numbers between 0 and 100:")
+for i in range(0,100,2):
+    print(i)
+
+# Use for loop to iterate from 0 to 100 and print only odd numbers
+print("Odd numbers between 0 and 100:")
+for i in range(0,100,1):
+    print(i)
+    
