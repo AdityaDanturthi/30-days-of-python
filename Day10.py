@@ -136,3 +136,36 @@ i =10
 while i >= 0:
     print(f"{i}\n")
     i -= 1
+
+    # Write a loop that makes seven calls to print(), so we get on the output the following triangle:
+
+  #
+  ##
+  ###
+  ####
+  #####
+  ######
+  #######
+
+print("First Pattern:")
+for i in range(8):
+    for j in range(i):
+        print("#", end = '')
+    print(" ")
+
+# Use nested loops to create the following:
+
+# # # # # # # #
+# # # # # # # #
+# # # # # # # #
+# # # # # # # #
+# # # # # # # #
+# # # # # # # #
+# # # # # # # #
+# # # # # # # #
+
+print("Second Pattern:\n")
+for i in range(8):
+    for j in range(8):
+        print("#", end = ' ')
+    print(" ")
