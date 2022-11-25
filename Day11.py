@@ -122,3 +122,27 @@ def areaofcircle(r):
 area = areaofcircle(radius)
 
 print(f"Area of circle with a radius of {radius} is {area}")
+
+# Write a function called add_all_nums which takes arbitrary number of arguments and sums all the arguments. Check if all the list items are number types. If not do give a reasonable feedback.
+def addition(*args):
+    sum = 0
+    for a in args:
+        sum += a
+    return sum
+args = []
+inputlen = int(input("How many number would you like to add? "))
+for i in range(inputlen):
+    args.append(int(input("Please input the number you would like to add: ")))
+
+res = addition(*args)
+
+print(f"The sum of {args} is {res}")
+        
+# Temperature in °C can be converted to °F using this formula: °F = (°C x 9/5) + 32. Write a function which converts °C to °F, convert_celsius_to-fahrenheit.
+def celciustofahrenheit(c):
+    f = (c * (9/5)) + 32
+    return f
+c = float(input("Please input temperature in celsius to convert it into fahrenheit: "))
+fahrenheit = celciustofahrenheit(c)
+
+print(f"{c}°C -> {fahrenheit}°F")
