@@ -97,3 +97,28 @@ def numbergenerator(team, *args):
     for i in args:
         print(i)
 numbergenerator('Team 1', 'Aditya', 'Alex')
+
+# Exercises: Day 11
+
+# Exercises: Level 1
+
+# Declare a function add_two_numbers. It takes two parameters and it returns a sum.
+num1 = int(input("Please input the first number:"))
+num2 = int(input("Please input the second number:"))
+
+def addtwonumbers(a, b):
+    return (a+b)
+
+res = addtwonumbers(num1, num2)
+print(f"{num1} + {num2} = {res}")
+
+# Area of a circle is calculated as follows: area = π x r x r. Write a function that calculates area_of_circle.
+radius = float(input("Please input the radius of the circle:"))
+
+def areaofcircle(r):
+    area = 3.14 * r * r
+    return area
+
+area = areaofcircle(radius)
+
+print(f"Area of circle with a radius of {radius} is {area}")
