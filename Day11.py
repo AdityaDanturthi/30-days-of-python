@@ -177,14 +177,40 @@ def additem(lst, item):
         item = item.capitalize()
         food.append(item)
         print(f"Added {item} to the {lst} list!")
-        print(food)
+        print("Updated list:",food)
     else:
         item = int(item)
         numbers.append(item)
         print(f"Added {item} to the {lst} list!")
-        print(numbers)
+        print("Updated list:",numbers)
 
 lst = input("Please input the name of the list: ")
 item = input("Please input the item: ")
 
 additem(lst, item)
+
+""" Declare a function named remove_item. It takes a list and an item as parameters. It returns a list with the item removed from it.
+food_staff = ['Potato', 'Tomato', 'Mango', 'Milk'];
+print(remove_item(food_staff, 'Mango'))  # ['Potato', 'Tomato', 'Milk'];
+numbers = [2, 3, 7, 9];
+print(remove_item(numbers, 3))  # [2, 7, 9]"""
+
+food = ['Potato', 'Tomato', 'Mango', 'Milk'];
+numbers = [2, 3, 7, 9];
+
+def removeItem(lst, item):
+    if lst == "food":
+        item = item.capitalize()
+        food.remove(item)
+        print(f"Removed {item} from the {lst} list!")
+        print("Updated list:",food)
+    else:
+        item = int(item)
+        numbers.remove(item)
+        print(f"Removed {item} from the {lst} list!")
+        print("Updated list:",numbers)
+
+lst = input("Please input the name of the list: ")
+item = input("Please input the item to be removed: ")
+
+removeItem(lst, item)
