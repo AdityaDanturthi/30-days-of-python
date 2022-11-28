@@ -162,3 +162,29 @@ for i in range(lstlen):
 
 capitalizedlst = capitalized(lst)
 print(capitalizedlst)
+
+"""Declare a function named add_item. It takes a list and an item parameters. It returns a list with the item added at the end.
+food = ['Potato', 'Tomato', 'Mango', 'Milk'];
+print(add_item(food, 'Meat'))     # ['Potato', 'Tomato', 'Mango', 'Milk','Pineapple'];
+numbers = [2, 3, 7, 9];
+print(add_item(numbers, 5))      [2, 3, 7, 9, 5]"""
+
+food = ['Potato', 'Tomato', 'Mango', 'Milk'];
+numbers = [2, 3, 7, 9];
+
+def additem(lst, item):
+    if lst == "food":
+        item = item.capitalize()
+        food.append(item)
+        print(f"Added {item} to the {lst} list!")
+        print(food)
+    else:
+        item = int(item)
+        numbers.append(item)
+        print(f"Added {item} to the {lst} list!")
+        print(numbers)
+
+lst = input("Please input the name of the list: ")
+item = input("Please input the item: ")
+
+additem(lst, item)
