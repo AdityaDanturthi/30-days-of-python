@@ -230,3 +230,33 @@ num = int(input("Please input the upper limit of the range of number you want ad
 res = addition(num)
 
 print(f"The addition of all numbers upto {num} is {res}!")
+
+# Declare a function named sum_of_odds. It takes a number parameter and it adds all the odd numbers in that range.
+
+def additionOdd(num):
+    sum = 0
+    for i in range(num+1):
+        temp = i
+        if temp % 2 != 0:
+            sum += temp 
+    return sum
+
+num = int(input("Please input the upper limit of the range of number you want added: "))
+res = additionOdd(num)
+
+print(f"The addition of all odd numbers upto {num} is {res}!")
+
+# Declare a function named sum_of_even. It takes a number parameter and it adds all the even numbers in that range.
+
+def additionEven(num):
+    sum = 0
+    for i in range(num+1):
+        temp = i
+        if temp % 2 == 0:
+            sum += temp 
+    return sum
+
+num = int(input("Please input the upper limit of the range of number you want added: "))
+res = additionEven(num)
+
+print(f"The addition of all odd numbers upto {num} is {res}!")
