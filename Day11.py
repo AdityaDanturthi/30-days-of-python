@@ -214,3 +214,19 @@ lst = input("Please input the name of the list: ")
 item = input("Please input the item to be removed: ")
 
 removeItem(lst, item)
+
+""" Declare a function named sum_of_numbers. It takes a number parameter and it adds all the numbers in that range.
+print(sum_of_numbers(5))  # 15
+print(sum_all_numbers(10)) # 55
+print(sum_all_numbers(100)) # 5050"""
+
+def addition(num):
+    sum = 0
+    for i in range(num+1):
+        sum += i 
+    return sum
+
+num = int(input("Please input the upper limit of the range of number you want added:"))
+res = addition(num)
+
+print(f"The addition of all numbers upto {num} is {res}!")
