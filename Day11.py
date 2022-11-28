@@ -146,3 +146,19 @@ c = float(input("Please input temperature in celsius to convert it into fahrenhe
 fahrenheit = celciustofahrenheit(c)
 
 print(f"{c}°C -> {fahrenheit}°F")
+
+# Declare a function named capitalize_list_items. It takes a list as a parameter and it returns a capitalized list of items
+def capitalized(lst):
+    capitalizedlst = []
+    for item in lst:
+        temp = item.capitalize()
+        capitalizedlst.append(temp)
+    return capitalizedlst
+
+lstlen = int(input("Please input the number of items you would like to input: "))
+lst  = []
+for i in range(lstlen):
+    lst.append(input("Please input the element: ")) 
+
+capitalizedlst = capitalized(lst)
+print(capitalizedlst)
