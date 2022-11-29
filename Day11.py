@@ -260,3 +260,28 @@ num = int(input("Please input the upper limit of the range of number you want ad
 res = additionEven(num)
 
 print(f"The addition of all odd numbers upto {num} is {res}!")
+
+# Exercises: Level 2
+
+"""Declare a function named evens_and_odds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+    print(evens_and_odds(100))
+    # The number of odds are 50.
+    # The number of evens are 51."""
+    
+def numberOfEvenandOdd(num):
+    counts = []
+    countEven = 0
+    countOdd = 0
+    for i in range(num+1):
+        if i % 2 == 0:
+            countEven += 1
+        else:
+            countOdd += 1
+    counts.append(countEven)
+    counts.append(countOdd)
+    return counts
+num = int(input("Please input the upper limit of the range to find the number of even and odd numbers: "))
+
+res = numberOfEvenandOdd(num)
+print(res)
+print(f"The number even numbers are {res[0]} and the number of odd numbers are {res[1]}")
