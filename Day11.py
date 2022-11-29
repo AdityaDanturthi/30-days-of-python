@@ -285,3 +285,15 @@ num = int(input("Please input the upper limit of the range to find the number of
 res = numberOfEvenandOdd(num)
 print(res)
 print(f"The number even numbers are {res[0]} and the number of odd numbers are {res[1]}")
+
+# Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
+def factorial(num):
+    fact = 1
+    for i in range(1,num+1):
+        fact *= i
+    return fact
+
+num = int(input("Please input a number to find it's factorial: "))
+res = factorial(num)
+
+print(f"The factorial of {num} is {res}")
