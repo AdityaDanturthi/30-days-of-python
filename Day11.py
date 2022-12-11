@@ -297,3 +297,14 @@ num = int(input("Please input a number to find it's factorial: "))
 res = factorial(num)
 
 print(f"The factorial of {num} is {res}")
+
+# Call your function is_empty, it takes a parameter and it checks if it is empty or not
+def isempty(arg):
+    if arg == "":
+        return "Empty"
+    elif arg != "":
+        return "Not empty"
+
+x = input()
+res = isempty(x)
+print(res)
