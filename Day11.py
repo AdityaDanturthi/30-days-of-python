@@ -308,3 +308,19 @@ def isempty(arg):
 x = input()
 res = isempty(x)
 print(res)
+
+# Exercises: Level 3
+
+# Write a function called is_prime, which checks if a number is prime.
+def isPrime(x):
+    c = 0
+    for i in range(2,x):
+        if x%i == 0:
+            c += 1
+    if c > 0:
+        print(f"{x} is not a Prime number!")
+    else:
+        print(f"{x} is a Prime number!")
+
+x = int(input("Please input a number to check if it prime: "))
+isPrime(x)
