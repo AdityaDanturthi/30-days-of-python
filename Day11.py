@@ -325,8 +325,6 @@ def isPrime(x):
 x = int(input("Please input a number to check if it prime: "))
 isPrime(x)
 
-# Exercises: Level 3
-
 # Write a functions which checks if all items are unique in the list.
 def uniquecheck(lst):
     notunique = []
