@@ -346,3 +346,21 @@ for i in range(n):
     lst.append(temp)
 
 uniquecheck(lst)
+
+# Write a function which checks if all the items of the list are of the same data type.
+def datatypecheck(lst):
+    differenttype = []
+    for i in range(len(lst)):
+        for j in range(len(lst)):
+            if i != j:
+                if type(lst[i]) != type(lst[j]):
+                    differenttype.append(lst[i])
+    if len(differenttype) > 0:
+        differentset = set(differenttype)
+        print(f"Following items {differentset} have different data types!")
+    elif len(differenttype) == 0:
+        print(f"All items {lst} have the same data type!")
+        
+lst = []
+lst = [int(x) if x.isnumeric() else x for x in input("Please input a list of items to check if they are all of the same data type: ").split()]
+datatypecheck(lst)
