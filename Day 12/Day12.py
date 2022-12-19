@@ -136,3 +136,12 @@ def userid(numberofchars):
 numberofchars = int(input('Number of characters required:'))
 # numberofstringsreq = int(input('Number of strings required:'))
 print(userid(numberofchars))
+
+# Write a function named rgb_color_gen. It will generate rgb colors (3 values ranging from 0 to 255 each). rgb(125,244,255) - the output should be in this form
+from random import randint
+def rgb_color_gen():
+    x = randint(0,256)
+    y = randint(0,256)
+    z = randint(0,256)
+    print(f"rgb({x},{y},{z})")
+rgb_color_gen()
