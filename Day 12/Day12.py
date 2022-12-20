@@ -145,3 +145,17 @@ def rgb_color_gen():
     z = randint(0,255)
     print(f"rgb({x},{y},{z})")
 rgb_color_gen()
+
+# Exercise Level: 3
+# Write a function which returns an array of seven random numbers in a range of 0-9. All the numbers must be unique.
+import random
+from random import randint
+
+uniquelst = []
+while len(uniquelst) < 7:
+    temp = random.randint(0,9)
+    if temp not in uniquelst:
+        uniquelst.append(temp)
+
+uniquelst.sort()
+print(uniquelst)
