@@ -78,3 +78,9 @@ def exponential(d):
     return lambda n: d ** n
 
 print(exponential(2)(2))
+
+# Exercises: Day 13
+
+# Filter only negative and zero in the list using list comprehension: numbers = [-4, -3, -2, -1, 0, 2, 4, 6]
+newlist = [x for x in numbers if x <= 0]
+print(newlist)
