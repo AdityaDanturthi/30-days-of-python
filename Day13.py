@@ -84,3 +84,15 @@ print(exponential(2)(2))
 # Filter only negative and zero in the list using list comprehension: numbers = [-4, -3, -2, -1, 0, 2, 4, 6]
 newlist = [x for x in numbers if x <= 0]
 print(newlist)
+
+"""Flatten the following list of lists of lists to a one dimensional list :
+
+list_of_lists =[[[1, 2, 3]], [[4, 5, 6]], [[7, 8, 9]]]
+
+output
+[1, 2, 3, 4, 5, 6, 7, 8, 9]"""
+
+list_of_lists =[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+flattenedlst =  [x for row in list_of_lists for x in row]
+print(flattenedlst)
