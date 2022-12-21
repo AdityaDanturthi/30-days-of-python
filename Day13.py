@@ -115,7 +115,7 @@ output:
 countcity = ['Country', 'City']
 countries = [('Finland', 'Helsinki'), ('Sweden', 'Stockholm'), ('Norway', 'Oslo')]
 
-dicttest = []
+countriestdict = []
 for i in range(len(countries)):
-    dicttest.append(dict(zip(countcity, countries[i])))
-print(dicttest)
+    countriestdict.append(dict(zip(countcity, countries[i])))
+print(countriestdict)
