@@ -105,3 +105,17 @@ countries = [('Finland', 'Helsinki'), ('Sweden', 'Stockholm'), ('Norway', 'Oslo'
 
 flattenedcountrieslst = [country for row in countries for country in row]
 print(flattenedcountrieslst)
+
+"""Change the following list to a list of dictionaries:
+output:
+[{'country': 'FINLAND', 'city': 'HELSINKI'},
+{'country': 'SWEDEN', 'city': 'STOCKHOLM'},
+{'country': 'NORWAY', 'city': 'OSLO'}]"""
+
+countcity = ['Country', 'City']
+countries = [('Finland', 'Helsinki'), ('Sweden', 'Stockholm'), ('Norway', 'Oslo')]
+
+dicttest = []
+for i in range(len(countries)):
+    dicttest.append(dict(zip(countcity, countries[i])))
+print(dicttest)
