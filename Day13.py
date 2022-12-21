@@ -96,3 +96,12 @@ list_of_lists =[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
 flattenedlst =  [x for row in list_of_lists for x in row]
 print(flattenedlst)
+
+"""Flatten the following list to a new list:
+output:
+[['FINLAND','FIN', 'HELSINKI'], ['SWEDEN', 'SWE', 'STOCKHOLM'], ['NORWAY', 'NOR', 'OSLO']]"""
+
+countries = [('Finland', 'Helsinki'), ('Sweden', 'Stockholm'), ('Norway', 'Oslo')]
+
+flattenedcountrieslst = [country for row in countries for country in row]
+print(flattenedcountrieslst)
