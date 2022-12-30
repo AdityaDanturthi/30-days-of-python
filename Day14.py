@@ -197,3 +197,23 @@ def addstrs(x, y):
 
 allstrs = reduce(addstrs, numstr)
 print(allstrs)
+
+countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
+names = ['A', 'B', 'C', 'D']
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+
+# Exercises: Level 1
+
+# Define a call function before map, filter or reduce, see examples.
+def printer(lst):
+    for i in lst:
+        print(i)
+
+# Use for loop to print each country in the countries list.
+list(map(printer, countries))
+
+# Use for to print each name in the names list.
+list(map(printer, names))
+
+# Use for to print each number in the numbers list.
+list(map(print, numbers))
