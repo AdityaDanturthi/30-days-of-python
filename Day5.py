@@ -139,6 +139,17 @@ print(ITCompanies)
 ITCompanies[0] = ITCompanies[0].upper()
 print(ITCompanies)
 
+# Change one of the it_companies names to uppercase (IBM excluded!) (Using random)
+import random
+
+def randnumgen():
+    temp = random.randint(0,len(ITCompanies)-1)
+    return temp
+
+i = randnumgen()
+if ITCompanies[i] != 'IBM':
+    print(ITCompanies[i].upper())
+
 # Join the it_companies with a string '#;  '
 ITCompaniescopy = ITCompanies.copy()
 i = 0
